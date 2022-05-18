@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ComparacaoString",
+            "request": "launch",
+            "mainClass": "comparacaostring.ComparacaoString",
+            "projectName": "Java_346ad635"
+        },
+        {
+            "type": "java",
+            "name": "Launch Operadores",
+            "request": "launch",
+            "mainClass": "operadores.Operadores",
+            "projectName": "Java_346ad635"
+        },
+        {
+            "type": "java",
+            "name": "Launch operadores",
+            "request": "launch",
+            "mainClass": "operadores.operadores",
+            "projectName": "Java_346ad635"
+        },
+        {
+            "type": "java",
             "name": "Launch ConversaoTipos",
             "request": "launch",
             "mainClass": "conversaotipos.ConversaoTipos",
