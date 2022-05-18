@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Estruturas",
+            "request": "launch",
+            "mainClass": "estruturas.Estruturas",
+            "projectName": "Java_346ad635"
+        },
+        {
+            "type": "java",
+            "name": "Launch Estruturas",
+            "request": "launch",
+            "mainClass": "Estruturas",
+            "projectName": "Java_346ad635"
+        },
+        {
+            "type": "java",
             "name": "Launch ComparacaoString",
             "request": "launch",
             "mainClass": "comparacaostring.ComparacaoString",
