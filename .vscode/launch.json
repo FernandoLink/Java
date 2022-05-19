@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Repita",
+            "request": "launch",
+            "mainClass": "estruturas.Repita",
+            "projectName": "Java_346ad635"
+        },
+        {
+            "type": "java",
+            "name": "Launch Repeticao",
+            "request": "launch",
+            "mainClass": "estruturas.Repeticao",
+            "projectName": "Java_346ad635"
+        },
+        {
+            "type": "java",
             "name": "Launch Estruturas",
             "request": "launch",
             "mainClass": "estruturas.Estruturas",
