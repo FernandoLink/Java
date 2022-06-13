@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ProjetoLivro",
+            "request": "launch",
+            "mainClass": "poo.aula09.ProjetoLivro",
+            "projectName": "Java_346ad635"
+        },
+        {
+            "type": "java",
             "name": "Launch UltraEmojiCombat",
             "request": "launch",
             "mainClass": "poo.aula07.UltraEmojiCombat",
