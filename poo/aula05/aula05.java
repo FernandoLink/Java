@@ -1,5 +1,3 @@
-package poo.aula05;
-
 public class aula05 {
     public static void main(String[] args) {
         ContaBanco p1 = new ContaBanco();

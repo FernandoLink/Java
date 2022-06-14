@@ -1,5 +1,3 @@
-package poo.aula02;
-
 public class Caneta {
     private String modelo;
     private String cor;

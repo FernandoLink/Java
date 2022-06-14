@@ -1,5 +1,3 @@
-package poo.aula07;
-
 public class UltraEmojiCombat {
     public static void main(String[] args) {
         Lutador l[] = new Lutador[6];

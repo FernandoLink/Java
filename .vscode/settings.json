@@ -1,6 +1,9 @@
 {
     "java.project.sourcePaths": [
+        "poo/aula13",
+        "poo/aula12",
         "poo/aula11",
-        "poo/aula12"
+        "poo/aula02",
+        "poo/aula05"
     ]
 }

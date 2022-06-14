@@ -1,5 +1,3 @@
-package poo.aula07;
-
 public class Lutador {
     private String nome;
     private String nacionalidade;

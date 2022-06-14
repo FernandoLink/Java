@@ -1,5 +1,3 @@
-package poo.aula06;
-
 public class ControleRemoto implements Controlador {
     private int volume;
     private boolean ligado;

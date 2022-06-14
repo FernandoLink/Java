@@ -1,5 +1,3 @@
-package poo.aula09;
-
 public class Livro implements Publicacao {
     private String titulo;
     private String autor;
