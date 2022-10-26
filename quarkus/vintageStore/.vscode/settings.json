@@ -1,0 +1,17 @@
+{
+    "microprofile.tools.validation.unknown.excluded": [
+        "*/mp-rest/providers/*/priority",
+        "mp.openapi.schema.*",
+        "kafka-streams.*",
+        "camel.*",
+        "mp.openapi.extensions.smallrye.info.title",
+        "mp.openapi.extensions.smallrye.info.version",
+        "mp.openapi.extensions.smallrye.info.description",
+        "mp.openapi.extensions.smallrye.info.contact.name",
+        "mp.openapi.extensions.smallrye.info.contact.url",
+        "org.agoncal.quarkus.microservices.book.NumberProxy/mp-result/url",
+        "number.proxy/mp-result/url",
+        "number.proxy/mp-rest/url"
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive"
+}

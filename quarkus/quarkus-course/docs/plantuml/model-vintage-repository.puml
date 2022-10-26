@@ -1,0 +1,10 @@
+@startuml
+!include style.iuml
+hide methods
+hide fields
+
+class ArtistRepository <<PanacheRepository>> {}
+class CustomerRepository <<PanacheRepository>> { }
+
+CustomerRepository-[hidden]- ArtistRepository
+@enduml
