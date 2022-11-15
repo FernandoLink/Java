@@ -1,0 +1,9 @@
+package bytebank;
+
+public class CriaConta {
+
+	public static void main(String[] args) {
+		Conta conta = new Conta(100.0, 1, 1, "Fernando Link");
+		System.out.println(conta);
+	}
+}

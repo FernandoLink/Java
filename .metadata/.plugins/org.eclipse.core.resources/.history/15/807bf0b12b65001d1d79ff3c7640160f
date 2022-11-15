@@ -1,0 +1,21 @@
+package bytebank;
+
+public class CriaConta {
+
+	public static void main(String[] args) {
+		Conta conta1 = new Conta(3000000.0, 1, 1, "Fernando Link");
+		Conta conta2 = new Conta(1000000.0, 1, 2, "Valeria Cristina Souza Link");
+		System.out.println(conta1);
+		System.out.println(conta2);
+		
+		conta1.deposita(125);
+		conta2.saca(345);
+		System.out.println(conta1);
+		System.out.println(conta2);
+		
+		conta1.transfere(conta2, 2345);
+		System.out.println(conta1);
+		System.out.println(conta2);
+		
+	}
+}
