@@ -1,11 +1,14 @@
-package bytebank;
 
-public class Conta {
-	private double saldo;
+public abstract class Conta {
+	protected double saldo;
 	private int agencia;
 	private int numero;
 	private String titular;
 	private static int total;
+
+	public Conta() {
+
+	}
 
 	public Conta(double saldo, int agencia, int numero, String titular) {
 		super();
@@ -16,9 +19,7 @@ public class Conta {
 		this.setTotal();
 	}
 
-	public void deposita(double valor) {
-		this.setSaldo(this.getSaldo() + valor);
-	}
+	public abstract void deposita(double valor);
 
 	public boolean saca(double valor) {
 		if (this.getSaldo() >= valor) {
@@ -30,7 +31,7 @@ public class Conta {
 
 	public boolean transfere(Conta conta, double valor) {
 		if (this.saca(valor)) {
-			conta.setSaldo(conta.getSaldo() + valor);
+			conta.deposita(valor);
 			return true;
 		}
 		return false;
@@ -81,7 +82,7 @@ public class Conta {
 	}
 
 	public void setTotal() {
-		this.total++;
+		Conta.total++;
 	}
 
 	@Override

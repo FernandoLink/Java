@@ -3,7 +3,7 @@ package bytebank;
 public class CriaConta {
 
 	public static void main(String[] args) {
-		Conta conta1 = new Conta(3000000.0, 1, 1, "Fernando Link");
+		Conta conta1 = new Conta(3000000.0, -1,-1, "Fernando Link");
 		System.out.println(conta1);
 
 		Conta conta2 = new Conta(1000000.0, 1, 2, "Valeria Cristina Souza Link");

@@ -8,7 +8,6 @@ public class TesteReferencia {
 		Conta conta2 = conta1;
 		System.out.println(conta2);
 
-		conta1.setSaldo(9000000.0);
 		System.out.println(conta1);
 		System.out.println(conta2);
 
