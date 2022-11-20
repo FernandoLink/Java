@@ -4,7 +4,10 @@
     <fullyQualifiedTypeName name="ControleBonificacao"/>
     <fullyQualifiedTypeName name="Funcionario"/>
     <fullyQualifiedTypeName name="EditorVideo"/>
-    <fullyQualifiedTypeName name="Designer"/>
     <fullyQualifiedTypeName name="ContaCorrente"/>
     <fullyQualifiedTypeName name="ContaPoupanca"/>
+    <fullyQualifiedTypeName name="SistemaInterno"/>
+    <fullyQualifiedTypeName name="Administrador"/>
+    <fullyQualifiedTypeName name="FuncionarioAutenticavel"/>
+    <fullyQualifiedTypeName name="Designer"/>
 </qualifiedTypeNameHistroy>

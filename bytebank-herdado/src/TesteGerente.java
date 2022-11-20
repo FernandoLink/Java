@@ -9,8 +9,8 @@ public class TesteGerente {
 
 		System.out.println(g1);
 
-		g1.setSenha(7736);
-		System.out.println(g1.autentica(7736));
+		g1.setSenha(2222);
+		System.out.println(g1.autentica(2222));
 
 		g1.setSalario(g1.getBonificacao());
 		System.out.println(g1);

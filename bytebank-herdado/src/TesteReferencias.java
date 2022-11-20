@@ -9,7 +9,7 @@ public class TesteReferencias {
 
 		EditorVideo editorVideo = new EditorVideo();
 		editorVideo.setSalario(2500.0);
-		
+
 		Designer designer = new Designer();
 		designer.setSalario(2000.0);
 
