@@ -15,7 +15,7 @@ public class Teste {
 		System.out.println(pMin.ordinal());
 		System.out.println(pNor.ordinal());
 		System.out.println(pMax.ordinal());
-		
+
 		System.out.println(pMin.getValor());
 		System.out.println(pNor.getValor());
 		System.out.println(pMax.getValor());
