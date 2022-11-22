@@ -1,11 +1,11 @@
 
-public class Fluxo {
+public class FluxoComTratamento {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws MinhaExcecao {
 		System.out.println("Ini do main");
 		try {
 			metodo1();
-		} catch (ArithmeticException | NullPointerException | MinhaExcecao e) {
+		} catch (ArithmeticException | NullPointerException e) {
 			System.out.println(e.getClass());
 			System.out.println(e.getMessage());
 			e.printStackTrace();
@@ -21,7 +21,12 @@ public class Fluxo {
 
 	private static void metodo2() throws MinhaExcecao {
 		System.out.println("Ini do metodo2");
-		throw new MinhaExcecao("minha excecao");
-		//System.out.println("Fim do metodo2");
+		for (int i = 1; i <= 5; i++) {
+			System.out.println(i);
+			//int a = i / 0;
+			Conta c = null;
+			c.deposita();
+		}
+		System.out.println("Fim do metodo2");
 	}
 }
