@@ -23,4 +23,12 @@
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="SaldoInsuficienteException"/>
+    <fullyQualifiedTypeName name="java.lang.AutoCloseable"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
+    <fullyQualifiedTypeName name="modelo.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="modelo.SaldoInsuficienteException"/>
+    <fullyQualifiedTypeName name="modelo.ContaCorrente"/>
+    <fullyQualifiedTypeName name="modelo.SeguroVida"/>
+    <fullyQualifiedTypeName name="modelo.CalculadorImposto"/>
 </qualifiedTypeNameHistroy>

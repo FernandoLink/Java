@@ -1,3 +1,4 @@
+package br.com.bytebank.banco.modelo;
 
 public class ContaCorrente extends Conta implements Tributavel {
 	public ContaCorrente(double saldo, int agencia, int numero, String titular) {
@@ -5,9 +6,9 @@ public class ContaCorrente extends Conta implements Tributavel {
 	}
 
 	@Override
-	public boolean saca(double valor) {
+	public void saca(double valor) throws SaldoInsuficienteException {
 		double valorASacar = valor + 0.2;
-		return super.saca(valorASacar);
+		super.saca(valorASacar);
 	}
 
 	@Override
@@ -20,4 +21,12 @@ public class ContaCorrente extends Conta implements Tributavel {
 	public double getValorImposto() {
 		return super.saldo * 0.01;
 	}
+
+	@Override
+	public String toString() {
+		return super.toString();
+	}
+	
+	
 }
+

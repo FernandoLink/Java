@@ -1,3 +1,4 @@
+package br.com.bytebank.banco.modelo;
 
 public abstract class Conta {
 	protected double saldo;
@@ -21,20 +22,16 @@ public abstract class Conta {
 
 	public abstract void deposita(double valor);
 
-	public boolean saca(double valor) {
-		if (this.getSaldo() >= valor) {
-			this.setSaldo(this.getSaldo() - valor);
-			return true;
+	public void saca(double valor) throws SaldoInsuficienteException {
+		if (this.getSaldo() < valor) {
+			throw new SaldoInsuficienteException("Saldo " + this.getSaldo() + ", Valor = " + valor);
 		}
-		return false;
+		this.setSaldo(this.getSaldo() - valor);
 	}
 
-	public boolean transfere(Conta conta, double valor) {
-		if (this.saca(valor)) {
-			conta.deposita(valor);
-			return true;
-		}
-		return false;
+	public void transfere(Conta conta, double valor) throws SaldoInsuficienteException {
+		this.saca(valor);
+		conta.deposita(valor);
 	}
 
 	private double getSaldo() {
