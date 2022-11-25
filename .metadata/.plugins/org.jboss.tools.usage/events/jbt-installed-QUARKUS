@@ -1,10 +1,10 @@
-#Thu Nov 24 18:30:40 BRT 2022
+#Fri Nov 25 19:34:39 BRT 2022
 a=installed
-c=1
+c=2
 cl=QUARKUS
 cmp=usage
 ct=jbt
-d=1669325440571
+d=1669415679845
 l=Installed plugins\: QUARKUS
 s=0
 v=2.2.400
