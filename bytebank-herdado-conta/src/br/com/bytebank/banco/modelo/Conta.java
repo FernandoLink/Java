@@ -104,7 +104,7 @@ public abstract class Conta {
 
 	@Override
 	public String toString() {
-		return "Conta [saldo=" + this.getSaldo() + ", agencia=" + this.getAgencia() + ", numero=" + this.getNumero()
+		return "[saldo=" + this.getSaldo() + ", agencia=" + this.getAgencia() + ", numero=" + this.getNumero()
 				+ ", titular=" + this.getTitular() + ", total=" + this.getTotal() + "]";
 	}
 }

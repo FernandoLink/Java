@@ -32,4 +32,5 @@
     <fullyQualifiedTypeName name="modelo.SeguroVida"/>
     <fullyQualifiedTypeName name="modelo.CalculadorImposto"/>
     <fullyQualifiedTypeName name="br.com.bytebank.banco.test.TesteString"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.Cliente"/>
 </qualifiedTypeNameHistroy>
