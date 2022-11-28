@@ -33,4 +33,9 @@
     <fullyQualifiedTypeName name="modelo.CalculadorImposto"/>
     <fullyQualifiedTypeName name="br.com.bytebank.banco.test.TesteString"/>
     <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.Cliente"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.GuardadorDeContas"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.ContaCorrente"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
