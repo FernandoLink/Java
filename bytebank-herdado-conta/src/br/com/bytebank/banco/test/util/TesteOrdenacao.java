@@ -9,7 +9,7 @@ import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 
-public class TesteSortList {
+public class TesteOrdenacao {
 
 	public static void main(String[] args) {
 		Conta cc1 = new ContaCorrente(333, 22, 44, "Fernando Link");
