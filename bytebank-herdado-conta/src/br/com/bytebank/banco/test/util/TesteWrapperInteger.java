@@ -7,14 +7,14 @@ public class TesteWrapperInteger {
 
 	public static void main(String[] args) {
 
-		int[] idades = new int[5];
-		String[] nomes = new String[5];
+		// int[] idades = new int[5];
+		// String[] nomes = new String[5];
 
-		int idade = 29;
+		// int idade = 29;
 		
 		// Wrapper Inicialização
 		Integer idadeRef = Integer.valueOf(29); // autoboxing
-		int valor = idadeRef.intValue(); // unboxing
+		// int valor = idadeRef.intValue(); // unboxing
 		
 		String s = "10";
 		
