@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Funcionario"/>
-    <fullyQualifiedTypeName name="EditorVideo"/>
-    <fullyQualifiedTypeName name="ContaPoupanca"/>
-    <fullyQualifiedTypeName name="SistemaInterno"/>
     <fullyQualifiedTypeName name="Administrador"/>
     <fullyQualifiedTypeName name="FuncionarioAutenticavel"/>
     <fullyQualifiedTypeName name="Designer"/>
@@ -32,13 +28,8 @@
     <fullyQualifiedTypeName name="br.com.bytebank.banco.test.TesteString"/>
     <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.Cliente"/>
     <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.GuardadorDeContas"/>
-    <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.ContaCorrente"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
     <fullyQualifiedTypeName name="java.lang.Number"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.Comparator"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="br.com.bytebank.banco.test.util.TitularDaContaComparator"/>
     <fullyQualifiedTypeName name="br.com.bytebank.banco.test.util.NumeroDaContaComparator"/>
     <fullyQualifiedTypeName name="java.util.function.Consumer"/>
@@ -60,4 +51,13 @@
     <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.ContaCorrente"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="br.com.link.Aula"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
 </qualifiedTypeNameHistroy>
