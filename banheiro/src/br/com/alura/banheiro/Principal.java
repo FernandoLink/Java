@@ -8,13 +8,17 @@ public class Principal {
 		
 		Thread convidado1 = new Thread(new TarefaNumero1(banheiro), "Joao");
 		Thread convidado2 = new Thread(new TarefaNumero2(banheiro), "Pedro");
+		Thread limpeza = new Thread(new TarefaLimpeza(banheiro), "Limpeza");
 		Thread convidado3 = new Thread(new TarefaNumero2(banheiro), "Maria");
 		Thread convidado4 = new Thread(new TarefaNumero1(banheiro), "Ana");
-		
+		limpeza.setDaemon(true);
+
 		convidado1.start();
 		convidado2.start();
 		convidado3.start();
 		convidado4.start();
+		limpeza.setPriority(Thread.MAX_PRIORITY);
+		limpeza.start();
 		
 	}
 
