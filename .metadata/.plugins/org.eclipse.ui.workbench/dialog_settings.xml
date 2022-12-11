@@ -30,9 +30,9 @@
 			<item value="1"/>
 		</list>
 		<list key="textArray">
-			<item value="con"/>
 			<item value="constr"/>
 			<item value="cons"/>
+			<item value="con"/>
 			<item value="gett"/>
 			<item value="get"/>
 			<item value="string"/>
