@@ -3,6 +3,7 @@
 	<groupId>br.com.link</groupId>
 	<artifactId>ecommerce</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
@@ -43,4 +44,11 @@
 
 		</plugins>
 	</build>
+	<modules>
+		<module>service-email</module>
+		<module>service-fraud-detector</module>
+		<module>service-log</module>
+		<module>service-new-order</module>
+		<module>common-kafka</module>
+	</modules>
 </project>

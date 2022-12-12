@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.m2e.core.wizards.Maven2ModuleWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.m2e"/>
 		</list>
@@ -24,13 +24,12 @@
 			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textEntries">
-			<item value="3"/>
+			<item value="2"/>
 			<item value="2"/>
 			<item value="3"/>
 			<item value="1"/>
 		</list>
 		<list key="textArray">
-			<item value="constr"/>
 			<item value="cons"/>
 			<item value="con"/>
 			<item value="gett"/>
