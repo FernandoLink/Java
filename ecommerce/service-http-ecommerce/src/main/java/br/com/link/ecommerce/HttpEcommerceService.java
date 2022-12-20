@@ -6,6 +6,7 @@ import org.eclipse.jetty.servlet.ServletHolder;
 
 
 // to run localhost:8080/new?email=xxxx&amount=12345
+// to rum localhost:8080/admin/generate-reports
 public class HttpEcommerceService {
 
 	public static void main(String[] args) throws Exception {
@@ -14,6 +15,7 @@ public class HttpEcommerceService {
 		var context = new ServletContextHandler();
 		context.setContextPath("/");
 		context.addServlet(new ServletHolder(new NewOrderServlet()), "/new");
+		context.addServlet(new ServletHolder(new GenerateAllReportServlet()), "/admin/generate-reports");
 		server.setHandler(context);
 		server.start();
 		server.join();

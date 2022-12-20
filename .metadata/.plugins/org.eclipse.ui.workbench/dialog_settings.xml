@@ -30,8 +30,8 @@
 			<item value="1"/>
 		</list>
 		<list key="textArray">
-			<item value="tostring"/>
-			<item value="tost"/>
+			<item value="tostr"/>
+			<item value="tostrin"/>
 			<item value="to"/>
 			<item value="gett"/>
 			<item value="get"/>
