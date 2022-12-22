@@ -54,10 +54,10 @@ public class ClienteTarefas {
 				}
 			}
 		});
-		
+
 		threadEnviaComando.start();
 		threadRecebeResposta.start();
-		
+
 		threadEnviaComando.join();
 
 		System.out.println("Fechando socket do cliente");
