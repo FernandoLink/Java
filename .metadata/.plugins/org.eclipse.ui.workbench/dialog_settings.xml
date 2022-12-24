@@ -24,18 +24,17 @@
 			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textEntries">
-			<item value="3"/>
+			<item value="2"/>
 			<item value="3"/>
 			<item value="2"/>
 			<item value="1"/>
 		</list>
 		<list key="textArray">
-			<item value="tostr"/>
 			<item value="tostrin"/>
 			<item value="to"/>
 			<item value="gett"/>
-			<item value="get"/>
 			<item value="sett"/>
+			<item value="get"/>
 			<item value="cons"/>
 			<item value="con"/>
 			<item value="navi"/>

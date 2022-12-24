@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Assertions"/>
-    <fullyQualifiedTypeName name="org.junit.Assert"/>
-    <fullyQualifiedTypeName name="br.com.link.threads.TarefaMultiplicacao"/>
-    <fullyQualifiedTypeName name="java.util.Vector"/>
     <fullyQualifiedTypeName name="br.com.link.banco.GerenciadorDeTransacao"/>
     <fullyQualifiedTypeName name="br.com.link.banco.PoolDeConexao"/>
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
@@ -25,7 +20,6 @@
     <fullyQualifiedTypeName name="java.time.Duration"/>
     <fullyQualifiedTypeName name="br.com.link.ecommerce.ConsumerFunction"/>
     <fullyQualifiedTypeName name="br.com.link.ecommerce.KafkaService"/>
-    <fullyQualifiedTypeName name="java.io.Closeable"/>
     <fullyQualifiedTypeName name="org.apache.kafka.common.serialization.Serializer"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
     <fullyQualifiedTypeName name="org.apache.kafka.common.serialization.Deserializer"/>
@@ -60,4 +54,10 @@
     <fullyQualifiedTypeName name="java.util.concurrent.BlockingQueue"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="br.com.link.certificacao.EscopoVariaveis"/>
+    <fullyQualifiedTypeName name="java.io.Closeable"/>
+    <fullyQualifiedTypeName name="br.com.link.pacote.java.Endereco"/>
+    <fullyQualifiedTypeName name="br.com.link.pacote.java.Pessoa"/>
+    <fullyQualifiedTypeName name="br.com.link.declarar.inicializar.variavel.TiposPrimitivos"/>
+    <fullyQualifiedTypeName name="br.com.link.objeto.referencia.variavel.ObjetoMeu"/>
 </qualifiedTypeNameHistroy>
