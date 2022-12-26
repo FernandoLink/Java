@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Runnable"/>
-    <fullyQualifiedTypeName name="java.net.ServerSocket"/>
-    <fullyQualifiedTypeName name="java.io.PrintStream"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
     <fullyQualifiedTypeName name="br.com.link.servidor.ServidorTarefas"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="br.com.link.metodos.atributos.MotocicletaDupla"/>
+    <fullyQualifiedTypeName name="br.com.link.metodos.atributos.Overloader"/>
+    <fullyQualifiedTypeName name="br.com.link.metodos.atributos.Livro"/>
 </qualifiedTypeNameHistroy>
