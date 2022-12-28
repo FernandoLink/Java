@@ -1,5 +1,6 @@
 package br.com.link.excecoes;
 
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -78,10 +79,16 @@ public class TesteExceptionErrorComuns {
 
 		// StackOverflowError
 		// new TesteExceptionErrorComuns().metodo();
-		
+
 		// NoClassDefFoundError
-		
-		// OutOfMemoryError		
-		
+
+		// OutOfMemoryError
+
+		// IllegalFormatConversionException
+		// System.out.format("%d %n", 42.0);
+
+		// DateTimeException
+		// System.out.println(LocalTime.of(312, 0));
+
 	}
 }
