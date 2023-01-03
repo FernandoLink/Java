@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.UUID"/>
-    <fullyQualifiedTypeName name="br.com.link.ecommerce.CorrelationId"/>
     <fullyQualifiedTypeName name="com.google.gson.JsonSerializationContext"/>
     <fullyQualifiedTypeName name="com.google.gson.JsonObject"/>
     <fullyQualifiedTypeName name="com.google.gson.JsonDeserializer"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="br.com.link.lambda.Matcher"/>
     <fullyQualifiedTypeName name="br.com.link.lambda.MaioresDeIdade"/>
     <fullyQualifiedTypeName name="java.util.function.Predicate"/>
+    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+    <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
 </qualifiedTypeNameHistroy>
