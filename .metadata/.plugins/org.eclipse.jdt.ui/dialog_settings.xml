@@ -308,4 +308,7 @@
 	</section>
 	<section name="OccurrencesSearchResultPage">
 	</section>
+	<section name="SelfEncapsulateFieldWizard">
+		<item key="GenerateJavadoc" value="false"/>
+	</section>
 </section>
