@@ -19,6 +19,15 @@ public class ProdutoDao {
 		this.em.persist(produto);
 	}
 
+	public void atualizar(Produto produto) {
+		this.em.merge(produto);
+	}
+
+	public void remover(Produto produto) {
+		produto = this.em.merge(produto);
+		this.em.remove(produto);
+	}
+
 	public Produto buscarPorId(Long id) {
 		return this.em.find(Produto.class, id);
 	}
@@ -39,8 +48,7 @@ public class ProdutoDao {
 	}
 
 	public List<Produto> buscarPorNomeDaCategoria(String categoria) {
-		String jpql = "SELECT p FROM Produto p WHERE p.categoria.nome = ?1";
-		return em.createQuery(jpql, Produto.class).setParameter(1, categoria).getResultList();
+		return em.createNamedQuery("Produto.produtoPorCategoria", Produto.class).setParameter(1, categoria).getResultList();
 	}
 
 	public BigDecimal buscarPrecoDoProdutoComNome(String nome) {
