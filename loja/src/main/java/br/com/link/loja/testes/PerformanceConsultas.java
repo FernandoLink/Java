@@ -1,7 +1,6 @@
 package br.com.link.loja.testes;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 import javax.persistence.EntityManager;
 
@@ -15,7 +14,6 @@ import br.com.link.loja.modelo.ItemPedido;
 import br.com.link.loja.modelo.Pedido;
 import br.com.link.loja.modelo.Produto;
 import br.com.link.loja.util.JPAUtil;
-import br.com.link.loja.vo.RelatorioDeVendasVo;
 
 public class PerformanceConsultas {
 
@@ -23,11 +21,14 @@ public class PerformanceConsultas {
 
 		popularBancoDeDados();
 		EntityManager em = JPAUtil.getEntityManager();
-	
+
 		System.out.println(em.find(Pedido.class, 1l).getData());
 		System.out.println(em.find(Pedido.class, 1l).getItens().size());
-		
+
+		PedidoDao pedidoDao = new PedidoDao(em);
+		Pedido pedido = pedidoDao.buscarPedidoComCliente(1l);
 		em.close();
+		System.out.println(pedido.getCliente().getNome());
 
 	}
 
@@ -41,14 +42,13 @@ public class PerformanceConsultas {
 		Produto macbook = new Produto("Macbook", "Macbook pro", new BigDecimal("2800"), informatica);
 
 		Cliente cliente = new Cliente("Fernando Link", "12345678901");
-		
+
 		Pedido pedido = new Pedido(cliente);
 		pedido.adicionarItem(new ItemPedido(10, pedido, celular));
 		pedido.adicionarItem(new ItemPedido(40, pedido, videogame));
 
 		Pedido pedido2 = new Pedido(cliente);
 		pedido2.adicionarItem(new ItemPedido(2, pedido, macbook));
-
 
 		EntityManager em = JPAUtil.getEntityManager();
 		CategoriaDao categoriaDao = new CategoriaDao(em);
