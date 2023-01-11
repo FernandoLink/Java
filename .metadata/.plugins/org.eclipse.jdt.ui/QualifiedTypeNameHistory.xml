@@ -56,8 +56,8 @@
     <fullyQualifiedTypeName name="javax.persistence.Entity"/>
     <fullyQualifiedTypeName name="javax.persistence.Inheritance"/>
     <fullyQualifiedTypeName name="javax.persistence.InheritanceType"/>
-    <fullyQualifiedTypeName name="javax.persistence.Embeddable"/>
-    <fullyQualifiedTypeName name="br.com.link.loja.modelo.CategoriaId"/>
-    <fullyQualifiedTypeName name="javax.persistence.EmbeddedId"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="javax.persistence.Embeddable"/>
+    <fullyQualifiedTypeName name="javax.persistence.EmbeddedId"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.modelo.CategoriaId"/>
 </qualifiedTypeNameHistroy>
