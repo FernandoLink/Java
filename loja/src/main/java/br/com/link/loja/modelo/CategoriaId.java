@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import javax.persistence.Embeddable;
 
+import net.bytebuddy.implementation.EqualsMethod;
+
 @Embeddable
 public class CategoriaId implements Serializable {
 
@@ -35,4 +37,13 @@ public class CategoriaId implements Serializable {
 		this.tipo = tipo;
 	}
 
+	@Override
+	public boolean equals(Object obj) {
+		return super.equals(obj);
+	}
+	
+	@Override
+	public int hashCode() {
+		return super.hashCode();
+	}
 }

@@ -32,5 +32,4 @@ public class Categoria {
 	public int hashCode() {
 		return super.hashCode();
 	}
-
 }

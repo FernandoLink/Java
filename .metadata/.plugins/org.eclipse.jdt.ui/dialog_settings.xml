@@ -8,6 +8,7 @@
 	<item key="TypeHierarchyViewPart.orientation" value="3"/>
 	<item key="filters_last_used" value="filter_imports;"/>
 	<item key="delegateUpdating" value="false"/>
+	<item key="ProjectSelectionDialog.show_all" value="false"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -207,7 +208,7 @@
 	</section>
 	<section name="JavaBuildConfigurationBlock">
 		<item key="expanded0" value="true"/>
-		<item key="expanded1" value="false"/>
+		<item key="expanded1" value="true"/>
 		<item key="expanded2" value="false"/>
 	</section>
 	<section name="JavaSearchPage">
@@ -310,5 +311,8 @@
 	</section>
 	<section name="SelfEncapsulateFieldWizard">
 		<item key="GenerateJavadoc" value="false"/>
+	</section>
+	<section name="NewRecordWizardPage">
+		<item key="create_unimplemented" value="false"/>
 	</section>
 </section>
