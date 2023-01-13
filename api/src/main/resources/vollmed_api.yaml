@@ -1,0 +1,363 @@
+openapi: 3.0.1
+info:
+  title: API de consultório
+  description: API para controlar médicos e suas especialidades dentro do consultório.
+  version: 0.0.1
+  contact:
+    name: Suporte
+    email: fernandolink@gmail.com
+  license:
+    name: 'Licença: GPLv3'
+    url: https://www.gnu.org/licenses/gpl-3.0.html
+paths:
+  /hello:
+    get:
+      summary: Hello World Spring
+      responses:
+        '200':
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                type: string
+                example: Hello World Spring!
+  /medicos:
+    get:
+      summary: Listar médicos
+      responses:
+        '200':
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  content:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: number
+                          example: 1
+                        nome: 
+                          type: string
+                          example: Fernando Link
+                        email:
+                          type: string
+                          example: fernandolink@gmail.com
+                        crm:
+                          type: string
+                          example: 123456
+                        especialidade:
+                          type: string
+                          example: CARDIOLOGIA
+                  pageable:
+                    type: object
+                    properties:
+                      sort:
+                        type: object
+                        properties:
+                          empty:
+                            type: boolean
+                          unsorted:
+                            type: boolean
+                          sorted:
+                            type: boolean
+                      offset:
+                        type: number
+                      pageNumber:
+                        type: number
+                      pageSize:
+                        type: number
+                      unpaged:
+                        type: boolean
+                      paged:
+                        type: boolean
+                  last:
+                    type: boolean
+                  totalElements:
+                    type: number
+                  totalPages:
+                    type: number
+                  size:
+                    type: number
+                  number:
+                    type: number
+                  sort:
+                    type: object
+                    properties:
+                      empty:
+                        type: boolean
+                      unsorted:
+                        type: boolean
+                      sorted:
+                        type: boolean
+                  first:
+                    type: boolean
+                  numberOfElements:
+                    type: number
+                  empty:
+                    type: boolean
+    post:
+      summary: Cadastrar médico
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nome:
+                  type: string
+                  example: Fernando link
+                email: 
+                  type: string
+                  example: fernandolink@gmail.com
+                telefone:
+                  type: string
+                  example: 41999283829
+                crm: 
+                  type: string
+                  example: 123456
+                especialidade:
+                  type: string
+                  example: DERMATOLOGIA
+                endereco:
+                  type: object
+                  properties:
+                    logradouro:
+                      type: string
+                    numero:
+                      type: string
+                    complemento: 
+                      type: string
+                    cep:
+                      type: string
+                    bairro:
+                      type: string
+                    cidade:
+                      type: string
+                    uf:
+                      type: string
+      responses:
+        '200':
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NoBody"
+    put:
+      summary: Atualizar médico
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DadosAtualizaveis"
+      responses:
+        '200':
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NoBody"
+  /pacientes:                  
+    get:
+      summary: Listar pacientes
+      responses:
+        '200':
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  content:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: number
+                          example: 1
+                        nome: 
+                          type: string
+                          example: Fernando Link
+                        email:
+                          type: string
+                          example: fernandolink@gmail.com
+                        cpf:
+                          type: string
+                          example: 123.456.789-10
+                  pageable:
+                    type: object
+                    properties:
+                      sort:
+                        type: object
+                        properties:
+                          empty:
+                            type: boolean
+                          unsorted:
+                            type: boolean
+                          sorted:
+                            type: boolean
+                      offset:
+                        type: number
+                      pageNumber:
+                        type: number
+                      pageSize:
+                        type: number
+                      unpaged:
+                        type: boolean
+                      paged:
+                        type: boolean
+                  last:
+                    type: boolean
+                  totalElements:
+                    type: number
+                  totalPages:
+                    type: number
+                  size:
+                    type: number
+                  number:
+                    type: number
+                  sort:
+                    type: object
+                    properties:
+                      empty:
+                        type: boolean
+                      unsorted:
+                        type: boolean
+                      sorted:
+                        type: boolean
+                  first:
+                    type: boolean
+                  numberOfElements:
+                    type: number
+                  empty:
+                    type: boolean
+    post:
+      summary: Cadastrar paciente
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nome:
+                  type: string
+                  example: Fernando link
+                email: 
+                  type: string
+                  example: fernandolink@gmail.com
+                cpf:
+                  type: string
+                  example: 123.456.789-10
+                telefone:
+                  type: string
+                  example: 41999283829
+                endereco:
+                  type: object
+                  properties:
+                    logradouro:
+                      type: string
+                    numero:
+                      type: string
+                    complemento: 
+                      type: string
+                    cep:
+                      type: string
+                    bairro:
+                      type: string
+                    cidade:
+                      type: string
+                    uf:
+                      type: string
+      responses:
+        '200':
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                type: string
+                example: No body returned for response
+    put:
+      summary: Atualizar paciente
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DadosAtualizaveis"
+      responses:
+        '200':
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NoBody"
+  /pacientes/{id}:
+    parameters:
+    - name: id
+      in: path
+      schema:
+        type: integer
+      required: true
+    delete:
+      summary: Deletar paciente
+      responses:
+        '200':
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NoBody"
+  /medicos/{id}:
+    parameters:
+    - name: id
+      in: path
+      schema:
+        type: integer
+      required: true
+    delete:
+      summary: Deletar médico
+      responses:
+        '200':
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NoBody"
+components:
+  schemas:
+    DadosAtualizaveis:
+      type: object
+      properties:
+        id:
+          type: string
+          example: 1
+        nome:
+          type: string
+          example: Fernando link
+        telefone:
+          type: string
+          example: 41999283829
+        endereco:
+          type: object
+          properties:
+            logradouro:
+              type: string
+            numero:
+              type: string
+            complemento: 
+              type: string
+            cep:
+              type: string
+            bairro:
+              type: string
+            cidade:
+              type: string
+            uf:
+              type: string
+    NoBody:
+      type: string
+      example: No body returned for response
+    
