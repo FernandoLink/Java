@@ -1,11 +1,11 @@
-#Thu Jan 12 17:13:39 BRT 2023
+#Fri Jan 13 14:54:18 BRT 2023
 a=startLS
 c=0
 cl=N/A
 cmp=quarkus
 ct=quarkus
-d=1673554419510
+d=1673632458042
 l=Number of microprofile-ls start
-s=10
+s=2
 v=1.7.0
 vl=How many times during the day
