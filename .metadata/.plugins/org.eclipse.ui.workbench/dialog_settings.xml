@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.jdt.ui.java"/>
-			<item value="org.eclipse.jpt.jaxb"/>
+			<item value="org.eclipse.wst.web.ui"/>
+			<item value="org.eclipse.jst.ws.ui.new"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
@@ -15,18 +15,21 @@
 		<list key="orderedElements">
 			<item value="org.eclipse.jdt.ui.actions.GenerateGetterSetter"/>
 			<item value="org.eclipse.jdt.ui.edit.text.java.generate.constructor.using.fields"/>
+			<item value="org.eclipse.ui.views.ProblemView"/>
 			<item value="org.eclipse.jdt.ui.edit.text.java.generate.tostring"/>
 			<item value="org.eclipse.ui.views.ResourceNavigator"/>
 		</list>
 		<list key="orderedProviders">
 			<item value="org.eclipse.ui.actions"/>
 			<item value="org.eclipse.ui.commands"/>
+			<item value="org.eclipse.e4.ui.parts"/>
 			<item value="org.eclipse.ui.commands"/>
 			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textEntries">
 			<item value="2"/>
 			<item value="2"/>
+			<item value="1"/>
 			<item value="2"/>
 			<item value="1"/>
 		</list>
@@ -35,6 +38,7 @@
 			<item value="get"/>
 			<item value="cons"/>
 			<item value="con"/>
+			<item value="problems"/>
 			<item value="tostrin"/>
 			<item value="to"/>
 			<item value="navi"/>
@@ -56,5 +60,12 @@
 		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
 			<item value="C:\Users\Fernando\Downloads\calculador.zip"/>
 		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="17"/>
+		<item key="DIALOG_Y_ORIGIN" value="-256"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="738"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>
