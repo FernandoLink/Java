@@ -21,7 +21,7 @@ public class ShowCompanyServlet extends HttpServlet {
 
 		Bank bank = new Bank();
 
-		Company company = bank.getBankById(id);
+		Company company = bank.getCompanyById(id);
 
 		request.setAttribute("company", company);
 		RequestDispatcher rd = request.getRequestDispatcher("/formUpdateCompany.jsp");

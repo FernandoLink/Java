@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="lombok.EqualsAndHashCode"/>
     <fullyQualifiedTypeName name="med.voll.api.medico.MedicoRepository"/>
     <fullyQualifiedTypeName name="med.voll.api.medico.DadosCadastroMedico"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Table"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="br.com.link.gerenciador.servlet.HelloWorldServlet"/>
 </qualifiedTypeNameHistroy>

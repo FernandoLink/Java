@@ -37,7 +37,7 @@ public class Bank {
 		}
 	}
 
-	public Company getBankById(Integer id) {
+	public Company getCompanyById(Integer id) {
 		for (Company company : list) {
 			if (company.getId() == id) {
 				return company;
