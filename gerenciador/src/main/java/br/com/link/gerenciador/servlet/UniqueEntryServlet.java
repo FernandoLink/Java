@@ -20,15 +20,6 @@ public class UniqueEntryServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		String paramAction = request.getParameter("action");
-		
-		HttpSession session = request.getSession();
-		boolean userNotLogged = (session.getAttribute("userLogged") == null);
-		boolean isProtectedAction = !(paramAction.equals("Login") || paramAction.equals("LoginForm"));
-		
-		if (isProtectedAction && userNotLogged) {
-			response.sendRedirect("entry?action=LoginForm");
-			return;
-		} 
 
 		String className = "br.com.link.gerenciador.action." + paramAction;
 		String name = null;
