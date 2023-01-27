@@ -9,7 +9,7 @@
 </head>
 <body>
 
-
+<c:import url="logout.jsp" />
 	<form action="${linkServletUpdateCompany}" method="post">
 
 		Name: <input type="text" name="name" value="${company.name}" />

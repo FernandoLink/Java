@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import br.com.link.gerenciador.action.Action;
 
@@ -19,10 +20,18 @@ public class UniqueEntryServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		String paramAction = request.getParameter("action");
+		
+		HttpSession session = request.getSession();
+		boolean userNotLogged = (session.getAttribute("userLogged") == null);
+		boolean isProtectedAction = !(paramAction.equals("Login") || paramAction.equals("LoginForm"));
+		
+		if (isProtectedAction && userNotLogged) {
+			response.sendRedirect("entry?action=LoginForm");
+			return;
+		} 
 
 		String className = "br.com.link.gerenciador.action." + paramAction;
-
-		String name;
+		String name = null;
 		try {
 			Class classe = Class.forName(className);
 			Action action = (Action) classe.newInstance();

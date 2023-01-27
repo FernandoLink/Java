@@ -13,8 +13,10 @@
 <title>List Companies</title>
 </head>
 <body>
+	<c:import url="logout.jsp" />	
 
-	List Companies JSTL:
+	User Logged In: ${userLogged.login}<br><br>
+	List Companies:
 	<br />
 	<ul>
 		<c:forEach items="${companies}" var="company">

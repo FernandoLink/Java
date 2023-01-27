@@ -1,0 +1,1 @@
+<a href="entry?action=Logout">Logout</a><br><br>

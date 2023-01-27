@@ -7,7 +7,7 @@
 <title>Register New Company</title>
 </head>
 <body>
-
+<c:import url="logout.jsp" />
 	
 	<form action="${linkServletNewCompany}" method="post">
 
