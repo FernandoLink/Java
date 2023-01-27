@@ -1,4 +1,4 @@
-package br.com.link.gerenciador.servlet;
+package br.com.link.gerenciador.action;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -6,18 +6,15 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/updateCompany")
-public class UpdateCompanyServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+import br.com.link.gerenciador.model.Bank;
+import br.com.link.gerenciador.model.Company;
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+public class UpdateCompany {
 
+	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String nameCompany = request.getParameter("name");
 		String paramDateOpen = request.getParameter("date");
 		String paramId = request.getParameter("id");
@@ -36,7 +33,6 @@ public class UpdateCompanyServlet extends HttpServlet {
 		empresa.setName(nameCompany);
 		empresa.setDateOpen(dateOpen);
 
-		response.sendRedirect("listCompanies");
+		response.sendRedirect("entry?action=ListCompanies");
 	}
-
 }
