@@ -7,6 +7,7 @@ import java.util.List;
 public class Bank {
 
 	private static List<Company> list = new ArrayList<Company>();
+	private static List<User> listUsers = new ArrayList<User>();
 	private static Integer keySequence = 1;
 
 	static {
@@ -16,6 +17,12 @@ public class Bank {
 		company2.setId(Bank.keySequence++);
 		list.add(company1);
 		list.add(company2);
+
+		User u1 = new User("link", "1234");
+		User u2 = new User("luiza", "5678");
+
+		listUsers.add(u1);
+		listUsers.add(u2);
 	}
 
 	public void add(Company company) {
@@ -41,6 +48,15 @@ public class Bank {
 		for (Company company : list) {
 			if (company.getId() == id) {
 				return company;
+			}
+		}
+		return null;
+	}
+
+	public User existUser(String login, String password) {
+		for (User user : listUsers) {
+			if (user.isEqual(login, password)) {
+				return user;
 			}
 		}
 		return null;

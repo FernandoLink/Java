@@ -14,6 +14,7 @@ import br.com.link.gerenciador.model.Company;
 
 public class NewCompany implements Action {
 
+	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String nameCompany = request.getParameter("name");
 		String paramDateOpen = request.getParameter("date");

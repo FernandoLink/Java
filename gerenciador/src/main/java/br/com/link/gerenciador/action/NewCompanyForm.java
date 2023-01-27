@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class NewCompanyForm implements Action {
 
+	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		return "forward:formNewCompany.jsp";

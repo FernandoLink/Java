@@ -10,7 +10,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>JSP Standard Tag Library</title>
+<title>List Companies</title>
 </head>
 <body>
 

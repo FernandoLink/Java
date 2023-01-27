@@ -11,6 +11,7 @@ import br.com.link.gerenciador.model.Company;
 
 public class ShowCompany implements Action {
 
+	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String paramId = request.getParameter("id");

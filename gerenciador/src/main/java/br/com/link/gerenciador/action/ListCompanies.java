@@ -12,6 +12,7 @@ import br.com.link.gerenciador.model.Company;
 
 public class ListCompanies implements Action {
 
+	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		Bank bank = new Bank();
