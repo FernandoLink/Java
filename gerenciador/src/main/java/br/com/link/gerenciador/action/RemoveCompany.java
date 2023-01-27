@@ -8,15 +8,16 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.link.gerenciador.model.Bank;
 
-public class RemoveCompany {
+public class RemoveCompany implements Action {
 
-	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public String execute(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		String paramId = request.getParameter("id");
 		Integer id = Integer.valueOf(paramId);
 
 		Bank bank = new Bank();
 		bank.removeCompany(id);
 
-		response.sendRedirect("entry?action=ListCompanies");
+		return "redirect:entry?action=ListCompanies";
 	}
 }

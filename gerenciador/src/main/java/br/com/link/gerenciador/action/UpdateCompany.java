@@ -12,9 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.link.gerenciador.model.Bank;
 import br.com.link.gerenciador.model.Company;
 
-public class UpdateCompany {
+public class UpdateCompany implements Action {
 
-	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String nameCompany = request.getParameter("name");
 		String paramDateOpen = request.getParameter("date");
 		String paramId = request.getParameter("id");
@@ -33,6 +33,6 @@ public class UpdateCompany {
 		empresa.setName(nameCompany);
 		empresa.setDateOpen(dateOpen);
 
-		response.sendRedirect("entry?action=ListCompanies");
+		return "redirect:entry?action=ListCompanies";
 	}
 }

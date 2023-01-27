@@ -2,17 +2,14 @@ package br.com.link.gerenciador.servlet;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.link.gerenciador.action.ListCompanies;
-import br.com.link.gerenciador.action.NewCompany;
-import br.com.link.gerenciador.action.RemoveCompany;
-import br.com.link.gerenciador.action.ShowCompany;
-import br.com.link.gerenciador.action.UpdateCompany;
+import br.com.link.gerenciador.action.Action;
 
 @WebServlet("/entry")
 public class UniqueEntryServlet extends HttpServlet {
@@ -23,21 +20,23 @@ public class UniqueEntryServlet extends HttpServlet {
 
 		String paramAction = request.getParameter("action");
 
-		if (paramAction.equals("ListCompanies")) {
-			ListCompanies action = new ListCompanies();
-			action.execute(request, response);
-		} else if (paramAction.equals("RemoveCompany")) {
-			RemoveCompany action = new RemoveCompany();
-			action.execute(request, response);
-		} else if (paramAction.equals("ShowCompany")) {
-			ShowCompany action = new ShowCompany();
-			action.execute(request, response);
-		} else if (paramAction.equals("UpdateCompany")) {
-			UpdateCompany action = new UpdateCompany();
-			action.execute(request, response);
-		} else if (paramAction.equals("NewCompany")) {
-			NewCompany action = new NewCompany();
-			action.execute(request, response);
+		String className = "br.com.link.gerenciador.action." + paramAction;
+
+		String name;
+		try {
+			Class classe = Class.forName(className);
+			Action action = (Action) classe.newInstance();
+			name = action.execute(request, response);
+		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
+			throw new ServletException(e);
+		}
+
+		String[] typeAddress = name.split(":");
+		if (typeAddress[0].equals("forward")) {
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/view/" + typeAddress[1]);
+			requestDispatcher.forward(request, response);
+		} else {
+			response.sendRedirect(typeAddress[1]);
 		}
 
 	}
