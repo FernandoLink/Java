@@ -1,6 +1,8 @@
 package br.com.link.gerenciador.model;
 
+import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
@@ -13,15 +15,18 @@ public class Bank {
 	static {
 		Company company1 = new Company("Link");
 		company1.setId(Bank.keySequence++);
+		company1.setDateOpen(Date.from(Instant.now()));
+		list.add(company1);
+		
 		Company company2 = new Company("InfoLink");
 		company2.setId(Bank.keySequence++);
-		list.add(company1);
+		company2.setDateOpen(Date.from(Instant.now()));
 		list.add(company2);
 
 		User u1 = new User("link", "1234");
-		User u2 = new User("luiza", "5678");
-
 		listUsers.add(u1);
+
+		User u2 = new User("luiza", "5678");
 		listUsers.add(u2);
 	}
 

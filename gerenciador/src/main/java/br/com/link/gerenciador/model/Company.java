@@ -32,8 +32,8 @@ public class Company {
 		return dateOpen;
 	}
 
-	public void setDateOpen(Date dateOpen) {
-		this.dateOpen = dateOpen;
+	public void setDateOpen(Date date) {
+		this.dateOpen = date;
 	}
 
 }
