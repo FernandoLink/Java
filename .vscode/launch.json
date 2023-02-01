@@ -6,6 +6,54 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TestInstanceObject",
+            "request": "launch",
+            "mainClass": "br.com.alura.alurator.playground.reflexao.TestInstanceObject"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "br.com.alura.estoque.Main",
+            "projectName": "estoque-api"
+        },
+        {
+            "type": "java",
+            "name": "Launch TesteDateTime",
+            "request": "launch",
+            "mainClass": "br.com.link.datatime.TesteDateTime",
+            "projectName": "certificacao"
+        },
+        {
+            "type": "java",
+            "name": "Launch TesteLambda",
+            "request": "launch",
+            "mainClass": "br.com.link.lambda.TesteLambda",
+            "projectName": "certificacao"
+        },
+        {
+            "type": "java",
+            "name": "Launch TesteInstanciaObjecto",
+            "request": "launch",
+            "mainClass": "br.com.alura.alurator.playground.reflexao.TesteInstanciaObjecto",
+            "projectName": "alurator-playground"
+        },
+        {
+            "type": "java",
+            "name": "Launch TesteEscopoVariaveis",
+            "request": "launch",
+            "mainClass": "br.com.link.escopo.variaveis.TesteEscopoVariaveis",
+            "projectName": "certificacao"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestaMetodos",
+            "request": "launch",
+            "mainClass": "br.com.link.metodos.atributos.TestaMetodos",
+            "projectName": "certificacao"
+        },
+        {
+            "type": "java",
             "name": "Launch aula05",
             "request": "launch",
             "mainClass": "aula05",

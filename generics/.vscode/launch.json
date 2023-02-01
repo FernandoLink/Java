@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch TestInstanceObjectCorreto",
+            "request": "launch",
+            "mainClass": "br.com.alura.alurator.playground.reflexao.TestInstanceObjectCorreto",
+            "projectName": "generics_f8725a4f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "br.com.alura.estoque.Main",
+            "projectName": "generics_f8725a4f"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestInstanceObject",
+            "request": "launch",
+            "mainClass": "br.com.alura.alurator.playground.reflexao.TestInstanceObject",
+            "projectName": "generics_f8725a4f"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestInstanceObject",
+            "request": "launch",
+            "mainClass": "TestInstanceObject",
+            "projectName": "generics_f8725a4f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
