@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TesteInvocaMetodoComParametro",
+            "request": "launch",
+            "mainClass": "br.com.alura.alurator.playground.reflexao.TesteInvocaMetodoComParametro",
+            "projectName": "generics_f8725a4f"
+        },
+        {
+            "type": "java",
+            "name": "Launch TesteInvocaMetodoSemParametro",
+            "request": "launch",
+            "mainClass": "br.com.alura.alurator.playground.reflexao.TesteInvocaMetodoSemParametro",
+            "projectName": "generics_f8725a4f"
+        },
+        {
+            "type": "java",
             "name": "Launch TestInstanceObjectCorreto",
             "request": "launch",
             "mainClass": "br.com.alura.alurator.playground.reflexao.TestInstanceObjectCorreto",
