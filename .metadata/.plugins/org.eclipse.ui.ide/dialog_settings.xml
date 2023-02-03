@@ -29,13 +29,35 @@
 	<section name="ExternalProjectImportWizard">
 		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
-		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+			<item value="C:\Users\Usuário\workspace\Java\poo"/>
+			<item value="C:\Users\Usuário\workspace\Java\threads"/>
+			<item value="C:\Users\Usuário\workspace\Java\servidor-tarefas"/>
+			<item value="C:\Users\Usuário\workspace\Java\junit"/>
+			<item value="C:\Users\Usuário\workspace\Java\java-pilha"/>
+			<item value="C:\Users\Usuário\workspace\Java\java-io"/>
+			<item value="C:\Users\Usuário\workspace\Java\java8"/>
+			<item value="C:\Users\Usuário\workspace\Java\gerenciador-de-cursos"/>
+			<item value="C:\Users\Usuário\workspace\Java\gerenciador"/>
+			<item value="C:\Users\Usuário\workspace\Java\experimento"/>
+			<item value="C:\Users\Usuário\workspace\Java\enums"/>
+			<item value="C:\Users\Usuário\workspace\Java\cliente-ui-tarefas"/>
+			<item value="C:\Users\Usuário\workspace\Java\certificacao"/>
+			<item value="C:\Users\Usuário\workspace\Java\bytebank-herdado-conta"/>
+			<item value="C:\Users\Usuário\workspace\Java\bytebank-herdado"/>
+			<item value="C:\Users\Usuário\workspace\Java\bytebank"/>
+			<item value="C:\Users\Usuário\workspace\Java\busca-textual"/>
+			<item value="C:\Users\Usuário\workspace\Java\banheiro"/>
 			<item value="D:\workspace\Java\loja-virtual-view-repository"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\Usuário\Downloads\4-estoque-api.zip"/>
+			<item value="C:\Users\Usuário\Downloads\4-alurator.zip"/>
+			<item value="C:\Users\Usuário\Downloads\4-alurator-playground.zip"/>
 			<item value=""/>
 		</list>
 	</section>
@@ -45,6 +67,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Usuário\workspace\Java\poo"/>
 			<item value="D:\workspace\Java\cliente-ui-tarefas"/>
 		</list>
 	</section>

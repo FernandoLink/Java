@@ -1,5 +1,10 @@
 public class Funcionario extends Pessoa {
-    private String setor;
+    public Funcionario(String nome, int idade, String sexo) {
+		super(nome, idade, sexo);
+		// TODO Auto-generated constructor stub
+	}
+
+	private String setor;
     private boolean trabalhando;
 
     public void mudarTrabalho() {
