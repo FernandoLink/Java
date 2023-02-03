@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jakarta.validation.constraints.NotNull"/>
-    <fullyQualifiedTypeName name="org.springframework.web.service.annotation.DeleteExchange"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
-    <fullyQualifiedTypeName name="jakarta.transaction.Transactional"/>
-    <fullyQualifiedTypeName name="org.springframework.data.domain.Pageable"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.Page"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler"/>
     <fullyQualifiedTypeName name="org.springframework.web.util.UriComponentsBuilder"/>
@@ -60,4 +55,9 @@
     <fullyQualifiedTypeName name="br.com.alura.alurator.playground.anotacao.NomeTagXml"/>
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
     <fullyQualifiedTypeName name="br.com.alura.estoque.dao.ProdutoDaoMock"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="br.com.alura.rh.model.Cargo"/>
+    <fullyQualifiedTypeName name="br.com.alura.rh.ValidacaoException"/>
 </qualifiedTypeNameHistroy>
