@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.data.domain.Page"/>
-    <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler"/>
-    <fullyQualifiedTypeName name="org.springframework.web.util.UriComponentsBuilder"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
-    <fullyQualifiedTypeName name="med.voll.api.medico.DadosDetalhamentoMedico"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.EntityNotFoundException"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.MethodArgumentNotValidException"/>
-    <fullyQualifiedTypeName name="med.voll.api.infra.TratadorDeErros.DadosErroValidacao"/>
-    <fullyQualifiedTypeName name="org.springframework.validation.FieldError"/>
-    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
-    <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetailsService"/>
-    <fullyQualifiedTypeName name="med.voll.api.usuario.UsuarioRepository"/>
-    <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.EnableWebSecurity"/>
-    <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.builders.HttpSecurity"/>
     <fullyQualifiedTypeName name="org.springframework.security.config.http.SessionCreationPolicy"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestControllerAdvice"/>
     <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
@@ -25,7 +9,6 @@
     <fullyQualifiedTypeName name="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
     <fullyQualifiedTypeName name="org.springframework.security.core.authority.SimpleGrantedAuthority"/>
     <fullyQualifiedTypeName name="com.auth0.jwt.algorithms.Algorithm"/>
-    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="java.time.ZoneOffset"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
     <fullyQualifiedTypeName name="jakarta.servlet.Filter"/>
@@ -55,9 +38,26 @@
     <fullyQualifiedTypeName name="br.com.alura.alurator.playground.anotacao.NomeTagXml"/>
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
     <fullyQualifiedTypeName name="br.com.alura.estoque.dao.ProdutoDaoMock"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
-    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
     <fullyQualifiedTypeName name="br.com.alura.rh.model.Cargo"/>
     <fullyQualifiedTypeName name="br.com.alura.rh.ValidacaoException"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.imposto.CalculadoraDeImpostos"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.imposto.TipoImposto"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.imposto.Imposto"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.desconto.DescontoParaOrcamentoComMaisDeCincoItens"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.desconto.DescontoParaOrcamentoComValorMaiorQueQuinhetos"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.orcamento.Orcamento"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.DomainException"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.orcamento.situacao.SituacaoOrcamento"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.orcamento.situacao.Finalizado"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.orcamento.situacao.EmAnalise"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.pedido.GeraPedido"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.pedido.acao.AcaoAposGerarPedido"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.pedido.acao.SalvarPedidoNoBancoDeDados"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.pedido.acao.EnviarEmailPedido"/>
 </qualifiedTypeNameHistroy>
