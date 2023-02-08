@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.security.config.http.SessionCreationPolicy"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestControllerAdvice"/>
-    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
-    <fullyQualifiedTypeName name="org.apache.tomcat.util.net.openssl.ciphers.Authentication"/>
-    <fullyQualifiedTypeName name="org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration"/>
-    <fullyQualifiedTypeName name="org.springframework.security.crypto.password.PasswordEncoder"/>
-    <fullyQualifiedTypeName name="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
-    <fullyQualifiedTypeName name="org.springframework.security.core.authority.SimpleGrantedAuthority"/>
     <fullyQualifiedTypeName name="com.auth0.jwt.algorithms.Algorithm"/>
     <fullyQualifiedTypeName name="java.time.ZoneOffset"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
@@ -21,7 +13,6 @@
     <fullyQualifiedTypeName name="jakarta.servlet.ServletException"/>
     <fullyQualifiedTypeName name="br.com.link.gerenciador.servlet.ListaEmpresasServlet"/>
     <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="br.com.link.gerenciador.servlet.Bank"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
@@ -41,23 +32,32 @@
     <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
     <fullyQualifiedTypeName name="br.com.alura.rh.model.Cargo"/>
     <fullyQualifiedTypeName name="br.com.alura.rh.ValidacaoException"/>
-    <fullyQualifiedTypeName name="br.com.link.loja.imposto.CalculadoraDeImpostos"/>
     <fullyQualifiedTypeName name="br.com.link.loja.imposto.TipoImposto"/>
     <fullyQualifiedTypeName name="br.com.link.loja.imposto.Imposto"/>
     <fullyQualifiedTypeName name="br.com.link.loja.desconto.DescontoParaOrcamentoComMaisDeCincoItens"/>
     <fullyQualifiedTypeName name="br.com.link.loja.desconto.DescontoParaOrcamentoComValorMaiorQueQuinhetos"/>
-    <fullyQualifiedTypeName name="br.com.link.loja.orcamento.Orcamento"/>
     <fullyQualifiedTypeName name="br.com.link.loja.DomainException"/>
     <fullyQualifiedTypeName name="br.com.link.loja.orcamento.situacao.SituacaoOrcamento"/>
     <fullyQualifiedTypeName name="br.com.link.loja.orcamento.situacao.Finalizado"/>
     <fullyQualifiedTypeName name="br.com.link.loja.orcamento.situacao.EmAnalise"/>
-    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="br.com.link.loja.pedido.GeraPedido"/>
-    <fullyQualifiedTypeName name="br.com.link.loja.pedido.acao.AcaoAposGerarPedido"/>
     <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="br.com.link.loja.pedido.acao.SalvarPedidoNoBancoDeDados"/>
     <fullyQualifiedTypeName name="br.com.link.loja.pedido.acao.EnviarEmailPedido"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.http.HttpAdapter"/>
+    <fullyQualifiedTypeName name="java.net.URL"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.orcamento.RegistroDeOrcamento"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.http.JavaHttpCliente"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.imposto.CalculadoraDeImpostos"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.orcamento.Orcamento"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.orcamento.ItemOrcamento"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.pedido.acao.AcaoAposGerarPedido"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.pedido.acao.LogDePedido"/>
+    <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
+    <fullyQualifiedTypeName name="br.com.link.loja.orcamento.OrcamentoProxy"/>
 </qualifiedTypeNameHistroy>

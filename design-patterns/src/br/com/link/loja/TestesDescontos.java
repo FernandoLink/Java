@@ -3,16 +3,24 @@ package br.com.link.loja;
 import java.math.BigDecimal;
 
 import br.com.link.loja.desconto.CalculadoraDeDescontos;
+import br.com.link.loja.orcamento.ItemOrcamento;
 import br.com.link.loja.orcamento.Orcamento;
 
 public class TestesDescontos {
 
 	public static void main(String[] args) {
-		Orcamento orcamento1 = new Orcamento(new BigDecimal("200"), 6);
-		Orcamento orcamento2 = new Orcamento(new BigDecimal("1000"), 1);
-		CalculadoraDeDescontos calculadora = new CalculadoraDeDescontos();
+		Orcamento primeiro = new Orcamento();
+		primeiro.adicionarItem(new ItemOrcamento(new BigDecimal("200")));
 
-		System.out.println(calculadora.calcular(orcamento1));
-		System.out.println(calculadora.calcular(orcamento2));
+		Orcamento segundo = new Orcamento();
+		segundo.adicionarItem(new ItemOrcamento(new BigDecimal("1000")));
+
+		Orcamento terceiro = new Orcamento();
+		terceiro.adicionarItem(new ItemOrcamento(new BigDecimal("500")));
+
+		CalculadoraDeDescontos calculadora = new CalculadoraDeDescontos();
+		System.out.println(calculadora.calcular(primeiro));
+		System.out.println(calculadora.calcular(segundo));
+		System.out.println(calculadora.calcular(terceiro));
 	}
 }

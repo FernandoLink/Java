@@ -16,9 +16,9 @@
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
-			<item value="org.eclipse.ui.editors.lineNumberToggle"/>
-			<item value="org.eclipse.jdt.ui.actions.GenerateGetterSetter"/>
 			<item value="org.eclipse.jdt.ui.edit.text.java.generate.constructor.using.fields"/>
+			<item value="org.eclipse.jdt.ui.actions.GenerateGetterSetter"/>
+			<item value="org.eclipse.ui.editors.lineNumberToggle"/>
 			<item value="org.eclipse.jdt.ui.edit.text.java.generate.tostring"/>
 			<item value="org.eclipse.ui.views.ProblemView"/>
 			<item value="org.eclipse.ui.views.ResourceNavigator"/>
@@ -32,19 +32,19 @@
 			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textEntries">
+			<item value="2"/>
+			<item value="2"/>
 			<item value="1"/>
-			<item value="2"/>
-			<item value="2"/>
 			<item value="3"/>
 			<item value="1"/>
 			<item value="1"/>
 		</list>
 		<list key="textArray">
-			<item value="sln"/>
-			<item value="sett"/>
-			<item value="get"/>
 			<item value="cons"/>
 			<item value="con"/>
+			<item value="sett"/>
+			<item value="get"/>
+			<item value="sln"/>
 			<item value="tostrin"/>
 			<item value="to"/>
 			<item value="tos"/>

@@ -8,16 +8,15 @@ import br.com.link.loja.imposto.ISS;
 import br.com.link.loja.orcamento.ItemOrcamento;
 import br.com.link.loja.orcamento.Orcamento;
 
-public class TestesImpostos {
+public class TestesImposto {
 
 	public static void main(String[] args) {
 
 		Orcamento orcamento = new Orcamento();
-		orcamento.adicionarItem(new ItemOrcamento(new BigDecimal("100")));
-
+		orcamento.adicionarItem(new ItemOrcamento(new BigDecimal("200")));
 		CalculadoraDeImpostos calculadora = new CalculadoraDeImpostos();
 
-		System.out.println(calculadora.calcular(orcamento, new ICMS(null)));
-		System.out.println(calculadora.calcular(orcamento, new ISS(null)));
+		System.out.println(calculadora.calcular(orcamento, new ISS(new ICMS(null))));
 	}
+
 }
