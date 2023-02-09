@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.time.ZoneOffset"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
-    <fullyQualifiedTypeName name="jakarta.servlet.Filter"/>
-    <fullyQualifiedTypeName name="org.springframework.web.filter.OncePerRequestFilter"/>
-    <fullyQualifiedTypeName name="med.voll.api.infra.security.TokenService"/>
-    <fullyQualifiedTypeName name="org.springframework.security.core.context.SecurityContextHolder"/>
-    <fullyQualifiedTypeName name="org.springframework.security.authentication.UsernamePasswordAuthenticationToken"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-    <fullyQualifiedTypeName name="org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter"/>
-    <fullyQualifiedTypeName name="jakarta.servlet.ServletException"/>
     <fullyQualifiedTypeName name="br.com.link.gerenciador.servlet.ListaEmpresasServlet"/>
     <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="br.com.link.gerenciador.servlet.Bank"/>
@@ -39,7 +29,6 @@
     <fullyQualifiedTypeName name="br.com.link.loja.orcamento.situacao.SituacaoOrcamento"/>
     <fullyQualifiedTypeName name="br.com.link.loja.orcamento.situacao.Finalizado"/>
     <fullyQualifiedTypeName name="br.com.link.loja.orcamento.situacao.EmAnalise"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="br.com.link.loja.pedido.GeraPedido"/>
     <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
@@ -59,5 +48,16 @@
     <fullyQualifiedTypeName name="br.com.link.loja.pedido.acao.LogDePedido"/>
     <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
     <fullyQualifiedTypeName name="br.com.link.loja.orcamento.OrcamentoProxy"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterEach"/>
+    <fullyQualifiedTypeName name="br.com.alura.leilao.login.LoginPage"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.NoSuchElementException"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="br.com.alura.leilao.leiloes.CadastroLeilaoPage"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="br.com.alura.leilao.leiloes.LeiloesPage"/>
+    <fullyQualifiedTypeName name="org.junit.Assert"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 </qualifiedTypeNameHistroy>
