@@ -5,6 +5,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import br.com.alura.leilao.lance.LancesPage;
+
 public class LoginTest {
 
 	private LoginPage paginaDeLogin;
@@ -14,35 +16,37 @@ public class LoginTest {
 		this.paginaDeLogin = new LoginPage();
 	}
 
-	@Test
-	public void deveriaEfetuarLoginComDadosValidos() {
-		paginaDeLogin.preencheFormularioDeLogin("fulano", "pass");
-		paginaDeLogin.efetuaLogin();
-
-		Assert.assertFalse(paginaDeLogin.isPaginaDeLogin());
-		Assert.assertEquals("fulano", paginaDeLogin.getNomeUsuarioLogado());
-	}
-
-	@Test
-	public void naoDeveriaLogarComDadosInvalidos() {
-		paginaDeLogin.preencheFormularioDeLogin("admin", "admin");
-		paginaDeLogin.efetuaLogin();
-
-		Assert.assertTrue(paginaDeLogin.isPaginaDeLoginComDadosInvalidos());
-		Assert.assertNull(paginaDeLogin.getNomeUsuarioLogado());
-		Assert.assertTrue(paginaDeLogin.contemTexto("Usuário e senha inválidos."));
-	}
-
-	@Test
-	public void naoDeveriaAcessarPaginaRestritaSemEstarLogado() {
-		paginaDeLogin.navegaParaPaginaDeLances();
-
-		Assert.assertTrue(paginaDeLogin.isPaginaDeLogin());
-		Assert.assertFalse(paginaDeLogin.contemTexto("Dados do Leilão"));
-	}
-
 	@AfterEach
 	public void afterEach() {
 		this.paginaDeLogin.fechar();
 	}
+
+	@Test
+	public void deveriaEfetuarLoginComDadosValidos() {
+		paginaDeLogin.efetuarLogin("fulano", "pass");
+
+		String nomeUsuarioLogado = paginaDeLogin.getNomeUsuarioLogado();
+		Assert.assertEquals("fulano", nomeUsuarioLogado);
+		Assert.assertFalse(paginaDeLogin.isPaginaAtual());
+	}
+
+	@Test
+	public void naoDeveriaEfetuarLoginComDadosInvalidos() {
+		paginaDeLogin.efetuarLogin("invalido", "1233");
+
+		Assert.assertNull(paginaDeLogin.getNomeUsuarioLogado());
+		Assert.assertTrue(paginaDeLogin.isPaginaAtual());
+		Assert.assertTrue(paginaDeLogin.isMensagemDeLoginInvalidoVisivel());
+	}
+
+	@Test
+	public void naoDeveriaAcessarUrlRestritaSemEstarLogado() {
+		LancesPage paginaDeLances = new LancesPage();
+
+		Assert.assertFalse(paginaDeLances.isPaginaAtual());
+		Assert.assertFalse(paginaDeLances.isTituloLeilaoVisivel());
+
+		paginaDeLances.fechar();
+	}
+
 }
