@@ -37,7 +37,7 @@ public class WebSecurityConfig {
 	// Criar usuário inicial
 //	@Bean
 //	public JdbcUserDetailsManager users(PasswordEncoder encoder) {
-//		UserDetails user = User.builder().username("valeria").password(encoder.encode("cristina")).roles("ADM").build();
+//		UserDetails user = User.builder().username("luiza").password(encoder.encode("souza")).roles("ADM").build();
 //		JdbcUserDetailsManager jdbcUserDetailsManager = new JdbcUserDetailsManager(dataSource);
 //		jdbcUserDetailsManager.createUser(user);
 //		JdbcUserDetailsManager users = new JdbcUserDetailsManager();
