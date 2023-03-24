@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
-    <fullyQualifiedTypeName name="br.com.link.loja.orcamento.Orcamento"/>
-    <fullyQualifiedTypeName name="br.com.link.loja.orcamento.ItemOrcamento"/>
-    <fullyQualifiedTypeName name="br.com.link.loja.pedido.acao.AcaoAposGerarPedido"/>
-    <fullyQualifiedTypeName name="br.com.link.loja.pedido.acao.LogDePedido"/>
-    <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
     <fullyQualifiedTypeName name="br.com.link.loja.orcamento.OrcamentoProxy"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterEach"/>
     <fullyQualifiedTypeName name="br.com.alura.leilao.login.LoginPage"/>
@@ -60,4 +54,10 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="br.com.alura.mvc.mudi.interceptor.InterceptadorDeAcessos"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="java.net.URL"/>
+    <fullyQualifiedTypeName name="java.net.URLConnection"/>
+    <fullyQualifiedTypeName name="java.net.http.HttpClient"/>
+    <fullyQualifiedTypeName name="java.net.http.HttpRequest"/>
+    <fullyQualifiedTypeName name="java.net.http.HttpResponse.BodyHandlers"/>
+    <fullyQualifiedTypeName name="br.com.alura.dao.PlanetaDAO"/>
 </qualifiedTypeNameHistroy>
