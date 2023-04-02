@@ -25,15 +25,29 @@ public class CrudCargoService {
 			System.out.println("2 - Atualizar");
 			System.out.println("3 - Visualizar");
 			System.out.println("4 - Deletar");
+
 			int action = scanner.nextInt();
+
 			switch (action) {
-				case 1 -> salvar(scanner);
-				case 2 -> atualizar(scanner);
-				case 3 -> visualizar();
-				case 4 -> deletar(scanner);
-				default -> system = false;
+				case 1:
+					salvar(scanner);
+					break;
+				case 2:
+					atualizar(scanner);
+					break;
+				case 3:
+					visualizar();
+					break;
+				case 4:
+					deletar(scanner);
+					break;
+				default:
+					system = false;
+					break;
 			}
+
 		}
+
 	}
 
 	private void salvar(Scanner scanner) {
@@ -48,8 +62,9 @@ public class CrudCargoService {
 	private void atualizar(Scanner scanner) {
 		System.out.println("Id");
 		int id = scanner.nextInt();
-		System.out.println("Descricao do cargo");
+		System.out.println("Descricao do Cargo");
 		String descricao = scanner.next();
+
 		Cargo cargo = new Cargo();
 		cargo.setId(id);
 		cargo.setDescricao(descricao);

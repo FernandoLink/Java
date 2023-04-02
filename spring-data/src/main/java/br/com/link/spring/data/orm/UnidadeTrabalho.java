@@ -9,17 +9,10 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
 
-@Getter
-@Setter
-@ToString
 @Entity
-@Table(name = "unidades_trabalho")
+@Table(name = "unidade_trabalho")
 public class UnidadeTrabalho {
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
@@ -27,4 +20,41 @@ public class UnidadeTrabalho {
 	private String endereco;
 	@ManyToMany(mappedBy = "unidadeTrabalhos", fetch = FetchType.EAGER)
 	private List<Funcionario> funcionarios;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
+	public List<Funcionario> getFuncionarios() {
+		return funcionarios;
+	}
+
+	public void setFuncionarios(List<Funcionario> funcionarios) {
+		this.funcionarios = funcionarios;
+	}
+
+	@Override
+	public String toString() {
+		return "Unidades: " + "id:" + id + "| descricao:" + descricao + "| endereco:" + endereco;
+	}
 }
