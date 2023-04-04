@@ -1,5 +1,7 @@
 CREATE DATABASE link_bank;
 
+USE link_bank;
+
 CREATE TABLE `conta` (
   `numero` int NOT NULL,
   `saldo` decimal(10,0) DEFAULT NULL,

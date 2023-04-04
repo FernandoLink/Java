@@ -14,7 +14,7 @@ public class LinkbankApplication {
 
 	public static void main(String[] args) {
 		var opcao = exibirMenu();
-		while (opcao != 7) {
+		while (opcao != 8) {
 			try {
 				switch (opcao) {
 					case 1:
@@ -35,6 +35,9 @@ public class LinkbankApplication {
 					case 6:
 						realizarDeposito();
 						break;
+					case 7:
+						realizarTransferencia();
+						break;
 				}
 			} catch (RegraDeNegocioException e) {
 				System.out.println("Erro: " + e.getMessage());
@@ -44,19 +47,20 @@ public class LinkbankApplication {
 			opcao = exibirMenu();
 		}
 
-		System.out.println("Finalizando a aplicação.");
+		System.out.println("Finalizando a aplicacao.");
 	}
 
 	private static int exibirMenu() {
 		System.out.println("""
-				LINKBANK - ESCOLHA UMA OPÇÃO:
+				LINKBANK - ESCOLHA UMA OPï¿½ï¿½O:
 				1 - Listar contas abertas
 				2 - Abertura de conta
 				3 - Encerramento de conta
 				4 - Consultar saldo de uma conta
 				5 - Realizar saque em uma conta
-				6 - Realizar depósito em uma conta
-				7 - Sair
+				6 - Realizar deposito em uma conta
+				7 - Realizar transferencia
+				8 - Sair
 				""");
 		return teclado.nextInt();
 	}
@@ -71,7 +75,7 @@ public class LinkbankApplication {
 	}
 
 	private static void abrirConta() {
-		System.out.println("Digite o número da conta:");
+		System.out.println("Digite o numero da conta:");
 		var numeroDaConta = teclado.nextInt();
 
 		System.out.println("Digite o nome do cliente:");
@@ -91,7 +95,7 @@ public class LinkbankApplication {
 	}
 
 	private static void encerrarConta() {
-		System.out.println("Digite o número da conta:");
+		System.out.println("Digite o numero da conta:");
 		var numeroDaConta = teclado.nextInt();
 
 		service.encerrar(numeroDaConta);
@@ -102,7 +106,7 @@ public class LinkbankApplication {
 	}
 
 	private static void consultarSaldo() {
-		System.out.println("Digite o número da conta:");
+		System.out.println("Digite o numero da conta:");
 		var numeroDaConta = teclado.nextInt();
 		var saldo = service.consultarSaldo(numeroDaConta);
 		System.out.println("Saldo da conta: " + saldo);
@@ -112,7 +116,7 @@ public class LinkbankApplication {
 	}
 
 	private static void realizarSaque() {
-		System.out.println("Digite o número da conta:");
+		System.out.println("Digite o numero da conta:");
 		var numeroDaConta = teclado.nextInt();
 
 		System.out.println("Digite o valor do saque:");
@@ -125,15 +129,32 @@ public class LinkbankApplication {
 	}
 
 	private static void realizarDeposito() {
-		System.out.println("Digite o número da conta:");
+		System.out.println("Digite o numero da conta:");
 		var numeroDaConta = teclado.nextInt();
 
-		System.out.println("Digite o valor do depósito:");
+		System.out.println("Digite o valor do depï¿½sito:");
 		var valor = teclado.nextBigDecimal();
 
 		service.realizarDeposito(numeroDaConta, valor);
 
-		System.out.println("Depósito realizado com sucesso!");
+		System.out.println("Depï¿½sito realizado com sucesso!");
+		System.out.println("Pressione qualquer tecla e de ENTER para voltar ao menu principal");
+		teclado.next();
+	}
+
+	private static void realizarTransferencia() {
+		System.out.println("Digite o numero da conta de origem:");
+		var numeroDaContaOrigem = teclado.nextInt();
+
+		System.out.println("Digite o nUmero da conta de destino:");
+		var numeroDaContaDestino = teclado.nextInt();
+
+		System.out.println("Digite o valor a ser transferido:");
+		var valor = teclado.nextBigDecimal();
+
+		service.realizarTransferencia(numeroDaContaOrigem, numeroDaContaDestino, valor);
+
+		System.out.println("Transferencia realizada com sucesso!");
 		System.out.println("Pressione qualquer tecla e de ENTER para voltar ao menu principal");
 		teclado.next();
 	}
