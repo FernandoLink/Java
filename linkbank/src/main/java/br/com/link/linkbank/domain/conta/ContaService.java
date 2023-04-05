@@ -2,7 +2,6 @@ package br.com.link.linkbank.domain.conta;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
-import java.util.HashSet;
 import java.util.Set;
 
 import br.com.link.linkbank.ConnectionFactory;
@@ -15,8 +14,6 @@ public class ContaService {
 	public ContaService() {
 		this.connection = new ConnectionFactory();
 	}
-
-	private Set<Conta> contas = new HashSet<>();
 
 	public Set<Conta> listarContasAbertas() {
 		Connection conn = connection.recuperarConexao();
@@ -41,6 +38,10 @@ public class ContaService {
 
 		if (valor.compareTo(conta.getSaldo()) > 0) {
 			throw new RegraDeNegocioException("Saldo insuficiente!");
+		}
+
+		if (!conta.getEstaAtiva()) {
+			throw new RegraDeNegocioException("Conta Inativa!");
 		}
 
 		BigDecimal novoValor = conta.getSaldo().subtract(valor);
@@ -68,7 +69,18 @@ public class ContaService {
 			throw new RegraDeNegocioException("Conta nao pode ser encerrada pois ainda possui saldo!");
 		}
 
-		contas.remove(conta);
+		Connection conn = connection.recuperarConexao();
+		new ContaDAO(conn).deletar(numeroDaConta);
+	}
+
+	public void encerrarLogico(Integer numeroDaConta) {
+		var conta = buscarContaPorNumero(numeroDaConta);
+		if (conta.possuiSaldo()) {
+			throw new RegraDeNegocioException("Conta nao pode ser encerrada pois ainda possui saldo!");
+		}
+
+		Connection conn = connection.recuperarConexao();
+		new ContaDAO(conn).alterarLogico(numeroDaConta);
 	}
 
 	private Conta buscarContaPorNumero(Integer numero) {

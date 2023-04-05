@@ -98,7 +98,7 @@ public class LinkbankApplication {
 		System.out.println("Digite o numero da conta:");
 		var numeroDaConta = teclado.nextInt();
 
-		service.encerrar(numeroDaConta);
+		service.encerrarLogico(numeroDaConta);
 
 		System.out.println("Conta encerrada com sucesso!");
 		System.out.println("Pressione qualquer tecla e de ENTER para voltar ao menu principal");
