@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jakarta.persistence.FetchType"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
-    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.CascadeType"/>
-    <fullyQualifiedTypeName name="org.springframework.web.servlet.handler.WebRequestHandlerInterceptorAdapter"/>
     <fullyQualifiedTypeName name="br.com.alura.mvc.mudi.interceptor.InterceptadorDeAcessos"/>
     <fullyQualifiedTypeName name="java.net.URLConnection"/>
-    <fullyQualifiedTypeName name="java.net.http.HttpClient"/>
-    <fullyQualifiedTypeName name="java.net.http.HttpRequest"/>
     <fullyQualifiedTypeName name="java.net.http.HttpResponse.BodyHandlers"/>
     <fullyQualifiedTypeName name="br.com.alura.dao.PlanetaDAO"/>
     <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
@@ -50,7 +42,6 @@
     <fullyQualifiedTypeName name="br.com.alura.leilao.model.Leilao"/>
     <fullyQualifiedTypeName name="org.mockito.MockitoAnnotations"/>
     <fullyQualifiedTypeName name="br.com.alura.leilao.service.EnviadorDeEmails"/>
-    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="br.com.alura.leilao.service.GeradorDePagamento"/>
     <fullyQualifiedTypeName name="br.com.alura.leilao.dao.PagamentoDao"/>
     <fullyQualifiedTypeName name="java.util.List"/>
@@ -60,4 +51,13 @@
     <fullyQualifiedTypeName name="org.junit.Assert"/>
     <fullyQualifiedTypeName name="java.time.ZoneOffset"/>
     <fullyQualifiedTypeName name="java.time.ZoneId"/>
+    <fullyQualifiedTypeName name="java.net.http.HttpRequest"/>
+    <fullyQualifiedTypeName name="java.net.URI"/>
+    <fullyQualifiedTypeName name="java.net.http.HttpClient"/>
+    <fullyQualifiedTypeName name="java.net.http.HttpResponse"/>
+    <fullyQualifiedTypeName name="java.net.http.HttpResponse.BodyHandler"/>
+    <fullyQualifiedTypeName name="ConsultaCep"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="GeradorDeArquivo"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
 </qualifiedTypeNameHistroy>

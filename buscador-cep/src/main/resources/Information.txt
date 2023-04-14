@@ -1,0 +1,7 @@
+https://viacep.com.br/ws/82900150/json/
+
+https://servicodados.ibge.gov.br/api/v1/localidades/estados
+
+https://servicodados.ibge.gov.br/api/v1/localidades/estados/PR/municipios
+
+https://viacep.com.br/ws/PR/Curitiba/dom+jo%C3%A3o/json/
