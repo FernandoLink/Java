@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------------
+Para rodar Java Application normal 
+mas tem que colocar VM Arguments -> -Dspring.profiles.active=test
+---------------------------------------------------------------------------------
+http://localhost:8080/login
+---------------------------------------------------------------------------------
+banco de dados, pegar a url de conexão ao banco h2 no application-test.properties
+http://localhost:8080/h2-console
+---------------------------------------------------------------------------------
+popular o banco (class DBController.java)
+http://localhost:8080/db/seed
+---------------------------------------------------------------------------------
+apagar banco (class DBController.java)
+http://localhost:8080/db/delete
+---------------------------------------------------------------------------------
+Para fazer o teste com o chrome ou firefox tem que baixar o drive para testar
+os testes com selenium (class br.com.alura.leilao.e2e.pages.BrowserFactory.java)
+com a versão certa do browser instalado na máquina ou testar htmlunit que é um
+browser em memória.
+---------------------------------------------------------------------------------
