@@ -1,3 +1,5 @@
+BDD (Behavior Driven Development)
+Cucumber
 ---------------------------------------------------------------------------------
 Para rodar Java Application normal 
 mas tem que colocar VM Arguments -> -Dspring.profiles.active=test
@@ -17,4 +19,6 @@ Para fazer o teste com o chrome ou firefox tem que baixar o drive para testar
 os testes com selenium (class br.com.alura.leilao.e2e.pages.BrowserFactory.java)
 com a versão certa do browser instalado na máquina ou testar htmlunit que é um
 browser em memória.
+---------------------------------------------------------------------------------
+As features ficam no str/test/resources/features
 ---------------------------------------------------------------------------------
