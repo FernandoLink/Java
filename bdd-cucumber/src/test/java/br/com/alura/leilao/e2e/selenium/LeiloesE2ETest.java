@@ -10,14 +10,14 @@ import br.com.alura.leilao.e2e.pages.LeiloesPage;
 import br.com.alura.leilao.e2e.pages.LoginPage;
 import br.com.alura.leilao.e2e.pages.NovoLeilaoPage;
 
-public class LeiloesE2ETest extends E2ETestBase{
-	
+public class LeiloesE2ETest extends E2ETestBase {
+
 	private LeiloesPage leiloesPage;
 
 	@BeforeEach
 	void setup() {
 		LoginPage loginPage = new LoginPage(getDriver());
-		leiloesPage = loginPage.realizaLoginComoFulano();		
+		leiloesPage = loginPage.realizaLoginComoFulano();
 	}
 
 	@Test
@@ -26,27 +26,26 @@ public class LeiloesE2ETest extends E2ETestBase{
 		String nome = "Commodore Amiga";
 		String valor = "899.90";
 		String data = "04/08/2020";
-		
+
 		novoLeilaoPage.preencheForm(nome, valor, data);
-		
+
 		leiloesPage.esperaCarregar();
 
-		assertTrue(leiloesPage.existe(nome, valor, data));
+		assertTrue(leiloesPage.existe(nome, valor, data, "fulano"));
 	}
-	
-	
+
 	@Test
 	public void deveEditarUmLeilao() {
 		AlterarLeilaoPage novoLeilaoPage = leiloesPage.visitaPaginaParaAltearLeilao();
 		String nome = "Commodore Amiga";
 		String valor = "899.90";
 		String data = "04/08/2020";
-		
+
 		novoLeilaoPage.preencheForm(nome, valor, data);
-		
+
 		leiloesPage.esperaCarregar();
 
-		assertTrue(leiloesPage.existe(nome, valor, data));
+		assertTrue(leiloesPage.existe(nome, valor, data, "fulano"));
 	}
-	
+
 }

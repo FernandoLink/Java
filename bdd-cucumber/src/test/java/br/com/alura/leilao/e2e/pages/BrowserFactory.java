@@ -12,7 +12,7 @@ public class BrowserFactory {
 //	https://github.com/mozilla/geckodriver/releases	
 
 	public WebDriver createWebDriver() {
-		String webdriver = System.getProperty("browser", "htmlunit");
+		String webdriver = System.getProperty("browser", "chrome");
 		switch (webdriver) {
 			case "firefox":
 				return initFirefoxDriver();
@@ -23,15 +23,15 @@ public class BrowserFactory {
 		}
 	}
 
-	private  WebDriver initChromeDriver() {
+	private WebDriver initChromeDriver() {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\stepp\\Desktop\\curso-bdd\\workspace\\leilao\\drivers\\chromedriver.exe");
+				"C:\\Users\\Usuário\\workspace\\Java\\bdd-cucumber\\drivers\\chromedriver.exe");
 		return new ChromeDriver();
 	}
 
-	private  WebDriver initFirefoxDriver() {
+	private WebDriver initFirefoxDriver() {
 		System.setProperty("webdriver.gecko.driver",
-				"C:\\Users\\stepp\\Desktop\\curso-bdd\\workspace\\leilao\\drivers\\geckodriver.exe");
+				"C:\\Users\\Usuário\\workspace\\Java\\bdd-cucumber\\drivers\\geckodriver.exe");
 		return new FirefoxDriver();
 	}
 }

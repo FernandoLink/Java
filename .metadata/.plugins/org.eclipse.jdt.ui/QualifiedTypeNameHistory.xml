@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.net.URLConnection"/>
-    <fullyQualifiedTypeName name="java.net.http.HttpResponse.BodyHandlers"/>
-    <fullyQualifiedTypeName name="br.com.alura.dao.PlanetaDAO"/>
-    <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
-    <fullyQualifiedTypeName name="br.com.link.versao.nove.wsclient.NotaFiscalWSClient"/>
-    <fullyQualifiedTypeName name="br.com.link.GeradorDeFigurinhas"/>
-    <fullyQualifiedTypeName name="java.net.URL"/>
-    <fullyQualifiedTypeName name="br.com.link.ClienteHttp"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.mapping.Document"/>
     <fullyQualifiedTypeName name="org.springframework.data.mongodb.repository.MongoRepository"/>
@@ -43,11 +34,8 @@
     <fullyQualifiedTypeName name="br.com.alura.leilao.service.EnviadorDeEmails"/>
     <fullyQualifiedTypeName name="br.com.alura.leilao.service.GeradorDePagamento"/>
     <fullyQualifiedTypeName name="br.com.alura.leilao.dao.PagamentoDao"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.mockito.Mockito"/>
-    <fullyQualifiedTypeName name="junit.framework.Assert"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
-    <fullyQualifiedTypeName name="org.junit.Assert"/>
     <fullyQualifiedTypeName name="java.time.ZoneOffset"/>
     <fullyQualifiedTypeName name="java.time.ZoneId"/>
     <fullyQualifiedTypeName name="java.net.http.HttpRequest"/>
@@ -60,4 +48,16 @@
     <fullyQualifiedTypeName name="GeradorDeArquivo"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Nested"/>
+    <fullyQualifiedTypeName name="junit.framework.Assert"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.it.Quando"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.Before"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.After"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="io.cucumber.datatable.DataTable"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.pt.Dado"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.pt.Quando"/>
+    <fullyQualifiedTypeName name="org.junit.Assert"/>
+    <fullyQualifiedTypeName name="io.cucumber.java8.Pt"/>
 </qualifiedTypeNameHistroy>

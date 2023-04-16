@@ -57,7 +57,8 @@
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
+		<!--
+		https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
 		<dependency>
 			<groupId>org.mariadb.jdbc</groupId>
 			<artifactId>mariadb-java-client</artifactId>
@@ -132,11 +133,11 @@
 			<artifactId>selenium-api</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
-		    <groupId>org.seleniumhq.selenium</groupId>
-		    <artifactId>htmlunit-driver</artifactId>
-		    <scope>test</scope>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>htmlunit-driver</artifactId>
+			<scope>test</scope>
 		</dependency>
 
 	</dependencies>
@@ -161,7 +162,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<configuration>
 					<skipTests>true</skipTests>
-    			</configuration>
+				</configuration>
 				<executions>
 					<execution>
 						<id>unit-tests</id>
@@ -176,7 +177,8 @@
 							</includes>
 							<excludes>
 								<exclude>br.com.alura.leilao.integration.*.*Test</exclude>
-								<exclude>br.com.alura.leilao.e2e.acceptance.*Test</exclude>
+								<exclude>
+									br.com.alura.leilao.e2e.acceptance.*Test</exclude>
 								<exclude>br.com.alura.leilao.e2e.selenium.*Test</exclude>
 							</excludes>
 						</configuration>
@@ -184,10 +186,10 @@
 				</executions>
 			</plugin>
 			<plugin>
-		        <groupId>org.apache.maven.plugins</groupId>
-		        <artifactId>maven-failsafe-plugin</artifactId>
-		        <executions>
-		          <execution>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<executions>
+					<execution>
 						<id>integration-tests</id>
 						<phase>integration-test</phase>
 						<goals>
@@ -200,13 +202,14 @@
 							</includes>
 							<excludes>
 								<exclude>br.com.alura.leilao.model.*Test</exclude>
-								<exclude>br.com.alura.leilao.e2e.acceptance.*Test</exclude>
+								<exclude>
+									br.com.alura.leilao.e2e.acceptance.*Test</exclude>
 								<exclude>br.com.alura.leilao.e2e.selenium.*Test</exclude>
 							</excludes>
 						</configuration>
 					</execution>
-		        </executions>
-		      </plugin>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
