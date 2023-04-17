@@ -1,7 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy>
-    <typeInfo handle="=bdd-cucumber/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;br.com.alura.leilao.e2e.pages{BrowserFactory.java[BrowserFactory" modifiers="1" timestamp="1681651841820"/>
-    <typeInfo handle="=bdd-cucumber/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;br.com.alura.leilao.e2e.pages{Browser.java[Browser" modifiers="1" timestamp="1596884801000"/>
-    <typeInfo handle="=bdd-cucumber/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;br.com.alura.leilao.e2e.pages{LoginPage.java[LoginPage" modifiers="1" timestamp="1681651737857"/>
-    <typeInfo handle="=bdd-cucumber/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;br.com.alura.leilao.e2e.pages{LeiloesPage.java[LeiloesPage" modifiers="1" timestamp="1681653722432"/>
-</typeInfoHistroy>
+<typeInfoHistroy/>
