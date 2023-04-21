@@ -1,8 +1,12 @@
 package br.com.link.escola;
 
-import br.com.link.escola.aplicacao.aluno.matricular.MatricularAluno;
-import br.com.link.escola.aplicacao.aluno.matricular.MatricularAlunoDto;
-import br.com.link.escola.infra.aluno.RepositorioDeAlunosEmMemoria;
+import br.com.link.escola.academico.aplicacao.aluno.matricular.MatricularAluno;
+import br.com.link.escola.academico.aplicacao.aluno.matricular.MatricularAlunoDto;
+import br.com.link.escola.academico.dominio.aluno.LogDeAlunoMatriculado;
+import br.com.link.escola.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
+import br.com.link.escola.gamificacao.aplicacao.GeraSeloAlunoNovato;
+import br.com.link.escola.gamificacao.infra.selo.RepositorioDeSelosEmMemoria;
+import br.com.link.escola.shared.dominio.evento.PublicadorDeEventos;
 
 public class MatricularAlunoViaCLI {
 
@@ -11,7 +15,14 @@ public class MatricularAlunoViaCLI {
 		String cpf = "123.456.789-00";
 		String email = "fulano@email.com";
 
-		MatricularAluno matricular = new MatricularAluno(new RepositorioDeAlunosEmMemoria());
-		matricular.executa(new MatricularAlunoDto(nome, cpf, email));
+		MatricularAlunoDto dto = new MatricularAlunoDto(nome, cpf, email);
+
+		PublicadorDeEventos publicador = new PublicadorDeEventos();
+		publicador.adicionar(new LogDeAlunoMatriculado());
+		publicador.adicionar(new GeraSeloAlunoNovato(new RepositorioDeSelosEmMemoria()));
+
+		MatricularAluno matricular = new MatricularAluno(new RepositorioDeAlunosEmMemoria(), publicador);
+
+		matricular.executa(dto);
 	}
 }

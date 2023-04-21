@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="br.com.link.spring.data.repository.CargoRepository"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="br.com.link.spring.data.service.CrudCargoService"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.OneToMany"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Table"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
     <fullyQualifiedTypeName name="br.com.link.linkbank.ConnectionFactory"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
@@ -52,12 +45,19 @@
     <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
     <fullyQualifiedTypeName name="lombok.ToString"/>
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
-    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="br.com.link.escola.dominio.aluno.RepositorioDeAlunos"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="br.com.link.escola.dominio.aluno.CifradorDeSenha"/>
     <fullyQualifiedTypeName name="br.com.link.escola.aplicacao.indicacao.EnviarEmailIndicacao"/>
     <fullyQualifiedTypeName name="br.com.link.escola.infra.aluno.RepositorioDeAlunosEmMemoria"/>
     <fullyQualifiedTypeName name="br.com.link.escola.aplicacao.aluno.matricular.MatricularAluno"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="br.com.link.escola.dominio.aluno.LogDeAlunoMatriculado"/>
+    <fullyQualifiedTypeName name="br.com.link.escola.dominio.PublicadorDeEventos"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="br.com.link.escola.academico.dominio.aluno.AlunoMatriculado"/>
+    <fullyQualifiedTypeName name="br.com.link.escola.shared.dominio.evento.TipoDeEvento"/>
+    <fullyQualifiedTypeName name="br.com.link.escola.gamificacao.dominio.selo.RepositorioDeSelos"/>
 </qualifiedTypeNameHistroy>
