@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
-    <fullyQualifiedTypeName name="br.com.link.linkbank.ConnectionFactory"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="com.google.gson.Gson"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="com.google.gson.FieldNamingPolicy"/>
     <fullyQualifiedTypeName name="com.google.gson.annotations.SerializedName"/>
     <fullyQualifiedTypeName name="java.nio.charset.StandardCharsets"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="br.com.link.escola.academico.dominio.aluno.AlunoMatriculado"/>
     <fullyQualifiedTypeName name="br.com.link.escola.shared.dominio.evento.TipoDeEvento"/>
     <fullyQualifiedTypeName name="br.com.link.escola.gamificacao.dominio.selo.RepositorioDeSelos"/>
+    <fullyQualifiedTypeName name="com.mongodb.client.MongoClient"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.mongodb.client.model.Filters"/>
 </qualifiedTypeNameHistroy>
