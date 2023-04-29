@@ -7,7 +7,6 @@ public class Habilidade {
 	private String nivel;
 
 	public Habilidade() {
-
 	}
 
 	public Habilidade(String nome, String nivel) {

@@ -25,40 +25,10 @@ import br.com.link.escolamongo.models.Aluno;
 @Repository
 public class AlunoRepository {
 
-	private MongoClient client;
-	private MongoDatabase database;
+	private MongoClient cliente;
+	private MongoDatabase bancaDeDados;
 
-	public void salvar(Aluno aluno) {
-		criarConexao();
-		MongoCollection<Aluno> alunos = this.database.getCollection("alunos", Aluno.class);
-		alunos.insertOne(aluno);
-		client.close();
-	}
-
-	public List<Aluno> obterTodosAlunos() {
-		criarConexao();
-		MongoCollection<Aluno> alunos = this.database.getCollection("alunos", Aluno.class);
-
-		MongoCursor<Aluno> resultado = alunos.find().iterator();
-
-		List<Aluno> alunosEncontrados = new ArrayList<>();
-		while (resultado.hasNext()) {
-			Aluno aluno = resultado.next();
-			alunosEncontrados.add(aluno);
-		}
-		client.close();
-		return alunosEncontrados;
-	}
-
-	public Aluno obterAlunoPor(String id) {
-		criarConexao();
-		MongoCollection<Aluno> alunos = this.database.getCollection("alunos", Aluno.class);
-		Aluno aluno = alunos.find(Filters.eq("_id", new ObjectId(id))).first();
-		client.close();
-		return aluno;
-	}
-
-	public void criarConexao() {
+	private void criarConexao() {
 		String connection = "mongodb://root:pass@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&authSource=admin&appName=mongosh+1.8.0";
 		Codec<Document> codec = MongoClientSettings.getDefaultCodecRegistry().get(Document.class);
 		AlunoCodec alunoCodec = new AlunoCodec(codec);
@@ -67,7 +37,88 @@ public class AlunoRepository {
 		ConnectionString conn = new ConnectionString(connection);
 		MongoClientSettings opcoes = MongoClientSettings.builder().codecRegistry(registro).applyConnectionString(conn)
 				.build();
-		this.client = MongoClients.create(opcoes);
-		this.database = client.getDatabase("test");
+		this.cliente = MongoClients.create(opcoes);
+		this.bancaDeDados = cliente.getDatabase("test");
+
 	}
+
+	public void salvar(Aluno aluno) {
+
+		criarConexao();
+		MongoCollection<Aluno> alunos = this.bancaDeDados.getCollection("alunos", Aluno.class);
+		if (aluno.getId() == null) {
+			alunos.insertOne(aluno);
+		} else {
+			alunos.updateOne(Filters.eq("_id", aluno.getId()), new Document("$set", aluno));
+		}
+
+		fecharConexao();
+	}
+
+	public List<Aluno> obterTodosAlunos() {
+		criarConexao();
+		MongoCollection<Aluno> alunos = this.bancaDeDados.getCollection("alunos", Aluno.class);
+
+		MongoCursor<Aluno> resultados = alunos.find().iterator();
+
+		List<Aluno> alunosEncontrados = popularAlunos(resultados);
+		fecharConexao();
+
+		return alunosEncontrados;
+
+	}
+
+	public Aluno obterAlunoPor(String id) {
+		criarConexao();
+		MongoCollection<Aluno> alunos = this.bancaDeDados.getCollection("alunos", Aluno.class);
+		Aluno aluno = alunos.find(Filters.eq("_id", new ObjectId(id))).first();
+
+		return aluno;
+
+	}
+
+	public List<Aluno> pesquisarPor(String nome) {
+		criarConexao();
+		MongoCollection<Aluno> alunoCollection = this.bancaDeDados.getCollection("alunos", Aluno.class);
+		MongoCursor<Aluno> resultados = alunoCollection.find(Filters.eq("nome", nome), Aluno.class).iterator();
+		List<Aluno> alunos = popularAlunos(resultados);
+
+		fecharConexao();
+
+		return alunos;
+	}
+
+	private void fecharConexao() {
+		this.cliente.close();
+	}
+
+	private List<Aluno> popularAlunos(MongoCursor<Aluno> resultados) {
+		List<Aluno> alunos = new ArrayList<>();
+		while (resultados.hasNext()) {
+			alunos.add(resultados.next());
+		}
+		return alunos;
+	}
+
+	public List<Aluno> pesquisarPor(String classificacao, double nota) {
+		criarConexao();
+
+		MongoCollection<Aluno> alunoCollection = this.bancaDeDados.getCollection("alunos", Aluno.class);
+
+		MongoCursor<Aluno> resultados = null;
+
+		if (classificacao.equals("reprovados")) {
+			resultados = alunoCollection.find(Filters.lt("notas", nota)).iterator();
+		} else if (classificacao.equals("aprovados")) {
+			resultados = alunoCollection.find(Filters.gte("notas", nota)).iterator();
+		}
+
+		List<Aluno> alunos = popularAlunos(resultados);
+
+		fecharConexao();
+
+		return alunos;
+
+	}
+
 }

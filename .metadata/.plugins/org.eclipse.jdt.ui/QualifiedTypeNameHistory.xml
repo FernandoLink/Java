@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="br.com.alura.leilao.service.GeradorDePagamento"/>
-    <fullyQualifiedTypeName name="br.com.alura.leilao.dao.PagamentoDao"/>
     <fullyQualifiedTypeName name="org.mockito.Mockito"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="java.time.ZoneOffset"/>
@@ -42,7 +40,6 @@
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
     <fullyQualifiedTypeName name="br.com.link.escola.dominio.aluno.LogDeAlunoMatriculado"/>
     <fullyQualifiedTypeName name="br.com.link.escola.dominio.PublicadorDeEventos"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="br.com.link.escola.academico.dominio.aluno.AlunoMatriculado"/>
     <fullyQualifiedTypeName name="br.com.link.escola.shared.dominio.evento.TipoDeEvento"/>
@@ -50,14 +47,17 @@
     <fullyQualifiedTypeName name="com.mongodb.client.MongoClient"/>
     <fullyQualifiedTypeName name="com.mongodb.client.model.Filters"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
-    <fullyQualifiedTypeName name="br.com.link.escolamongo.repositories.AlunoRepository"/>
     <fullyQualifiedTypeName name="org.bson.codecs.CollectibleCodec"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
     <fullyQualifiedTypeName name="org.w3c.dom.Document"/>
     <fullyQualifiedTypeName name="org.bson.Document"/>
-    <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+    <fullyQualifiedTypeName name="br.com.link.escolamongo.repositories.AlunoRepository"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
